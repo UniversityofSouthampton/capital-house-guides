@@ -11,14 +11,17 @@
             "id": "eaf6b6ecc6763957",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "2025-03-12-unity-introdution-2/index.md",
-                "mode": "source",
-                "source": false
+                "file": "Main Page.canvas",
+                "viewState": {
+                  "x": -15,
+                  "y": -96,
+                  "zoom": 0
+                }
               },
-              "icon": "lucide-file",
-              "title": "index"
+              "icon": "lucide-layout-dashboard",
+              "title": "Main Page"
             }
           }
         ]
@@ -169,5 +172,21 @@
     }
   },
   "active": "eaf6b6ecc6763957",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "Main Page/Welcome.md",
+    "Main Page.canvas",
+    "Main Page",
+    "Unity/Sprites and Spritesheet Resources/index.md",
+    "Onboarding",
+    "2024-12-06-blender-placeholder-shp-icon-iconblender-label/index.md",
+    "2024-12-06-placeholder-shp-icon-iconblender-godot/index.md",
+    "2024-12-06-placeholder-shp-icon-iconunreal/index.md",
+    "Unity/Glossary/index.md",
+    "Unity/First Person Controller/index.md",
+    "Other",
+    "Unity/Introduction/index.md",
+    "Misc/Untitled.md",
+    "Misc Tech",
+    "Unity"
+  ]
 }
