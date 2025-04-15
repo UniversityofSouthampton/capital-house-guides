@@ -6,7 +6,7 @@ export default (() => {
       const curFile = props.fileData.relativePath?.split('/').slice(0, -1).join('/');
       let curFileLocalOrderTag = props.fileData.frontmatter?.localOrder?.toString();
       if(props.fileData.frontmatter?.localOrder?.valueOf == undefined) {curFileLocalOrderTag = "0"}
-      let nodesParam : string = 'current="'+curFile+"<lo:"+curFileLocalOrderTag+'>"&all="';
+      let nodesParam : string = 'current='+curFile+"<lo:"+curFileLocalOrderTag+'>&all=';
       props.fileData
       props.allFiles.forEach((f) => {
          let file = f.relativePath?.split('/').slice(0, -1).join('/');
@@ -15,7 +15,8 @@ export default (() => {
          nodesParam += file+"<lo:"+localOrderTag+">;";
        });
       nodesParam+='"';
-      const url : string = 'https://tech.wsagames.com/tree?'+nodesParam;
+      nodesParam = compresss
+      let url : string = 'https://tech.wsagames.com/guides/tree?data='+nodesParam;
       return (
         <div id="guidetree-component"> 
           <div id="guidetree-container">
