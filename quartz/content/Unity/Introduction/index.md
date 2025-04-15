@@ -8,6 +8,7 @@ tags:
   - "introduction"
   - "scripting"
   - "unity"
+localOrder: 0
 ---
 
 #### `[icon name="computer"]` Lab Note

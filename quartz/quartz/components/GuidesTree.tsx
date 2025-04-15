@@ -3,21 +3,25 @@ import { QuartzComponentProps } from "./types"
 export default (() => {
 
     function GuidesTree(props: QuartzComponentProps) {
-
-      let m = 'flowchart TD \n A[Christmas] -->|Get money| B(Go shopping) \n B --> C{Let me think} \n C -->|One| D[Laptop] \n C -->|Two| E[iPhone] \n C -->|Three| F[ Car] \n click B "http://www.github.com" "This is a link"'
-      let opt = {startOnLoad: true};
+      const curFile = props.fileData.relativePath?.split('/').slice(0, -1).join('/');
+      let curFileLocalOrderTag = props.fileData.frontmatter?.localOrder?.toString();
+      if(props.fileData.frontmatter?.localOrder?.valueOf == undefined) {curFileLocalOrderTag = "0"}
+      let nodesParam : string = 'current="'+curFile+"<lo:"+curFileLocalOrderTag+'>"&all="';
+      props.fileData
+      props.allFiles.forEach((f) => {
+         let file = f.relativePath?.split('/').slice(0, -1).join('/');
+         let localOrderTag = f.frontmatter?.localOrder?.toString();
+         if(f.frontmatter?.localOrder?.valueOf == undefined) {localOrderTag = "0"}
+         nodesParam += file+"<lo:"+localOrderTag+">;";
+       });
+      nodesParam+='"';
+      const url : string = 'https://tech.wsagames.com/tree?'+nodesParam;
       return (
         <div id="guidetree-component"> 
           <div id="guidetree-container">
+            <p>{url}</p>
             <button id="guidetree-expand">Expand</button>
-            <pre class="mermaid">
-            {m}
-            </pre>
-            <script type="module">
-              import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
-              mermaid.initialize({opt});
-            </script>
-            <script src="https://unpkg.com/@panzoom/panzoom@4.6.0/dist/panzoom.min.js"></script>
+            <iframe src={url}></iframe>
           </div>
         </div>
       )

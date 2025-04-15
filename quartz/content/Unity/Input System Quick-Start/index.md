@@ -3,6 +3,7 @@ title: "Unity - Input System Quick Start"
 date: 2024-11-19
 categories: 
   - "unity"
+localOrder: 5
 ---
 
 #### Avaliable on Loop

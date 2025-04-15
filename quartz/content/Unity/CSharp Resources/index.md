@@ -3,6 +3,7 @@ title: "Unity - C# and Scripting Resources"
 date: 2024-11-19
 categories: 
   - "unity"
+localOrder: 3
 ---
 
 Learning to code can seem daunting, but the only way to get better is through exposure! There are thousands of tutorials online all with unique learning styles. The best way to learn coding is by doing it, and in this post, I will recommend some resources to get you started!

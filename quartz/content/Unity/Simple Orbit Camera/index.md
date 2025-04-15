@@ -7,6 +7,7 @@ tags:
   - "3d"
   - "scripting"
   - "unity"
+localOrder: 7
 ---
 
 **Note: This is a student-submitted guide**. Please comment or get in touch with me (Parker) for suggestions or clarification!
