@@ -15,14 +15,14 @@ export default (() => {
          nodesParam += file+"<lo:"+localOrderTag+">;";
        });
       nodesParam+='"';
-      nodesParam = compresss
+      nodesParam = btoa(nodesParam);
       let url : string = 'https://tech.wsagames.com/guides/tree?data='+nodesParam;
       return (
         <div id="guidetree-component"> 
           <div id="guidetree-container">
-            <p>{url}</p>
+            <iframe id="guidetree-iframe" src={url}></iframe>
             <button id="guidetree-expand">Expand</button>
-            <iframe src={url}></iframe>
+          
           </div>
         </div>
       )
@@ -65,20 +65,29 @@ export default (() => {
         border-radius: 5px;
         background: #3c0b47;
         background: linear-gradient(135deg,rgba(60, 11, 71, 1) 0%, rgba(52, 74, 217, 1) 100%);
+        height: fit-content;
+        width: 100%;
         padding: 3px;
       }
       #guidetree-container {
         background: #222;
-        width: calc(100% - 10px);
-        height: calc(100% - 10px);
-        padding: 5px;
-
+        position: relative;
+        width: 100%;
+        height: 100%;
       }
       .mermaid {
         border:none;
       }
       #guidetree-expand{
         float: right;
+        z-index: 5;
+      }
+      #guidetree-iframe{
+        position: relative;
+        height: 100%;
+        width: 100%;
+        border:none;
+        z-index: 4;
       }
     `;
  
