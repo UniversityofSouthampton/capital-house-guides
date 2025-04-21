@@ -27,11 +27,6 @@ export default (() => {
         </div>
       )
     }
-
-   
-    GuidesTree.beforeDOMLoaded = `
-    console.log("hello from before the page loads!")
-    `
    
     GuidesTree.afterDOMLoaded = `
       document.getElementsByClassName("right sidebar")[0].style.zIndex = "2";
@@ -56,6 +51,14 @@ export default (() => {
             document.getElementById("guidetree-component").style.transform="translate(0px,0px)";
         }
       }
+
+      window.addEventListener("message", (e) => {
+      if(e.data.func == "quartzSetBodySlug"){
+        console.log(e.data.message);
+        let slug = e.data.message.replaceAll(" ", "-");
+        window.location.pathname = slug;
+      }
+      },false);
 
     `
     

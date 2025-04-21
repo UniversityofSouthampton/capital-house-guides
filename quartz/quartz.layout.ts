@@ -10,7 +10,7 @@ export const sharedPageComponents: SharedLayout = {
     links: {
       
     },
-  }),
+  })
 }
 
 // components for pages that display a single page (e.g. a single note)
@@ -63,5 +63,7 @@ export const defaultListPageLayout: PageLayout = {
     }),
     Component.Explorer(),
   ],
-  right: [],
+  right: [
+    Component.GuidesTree()
+  ],
 }
