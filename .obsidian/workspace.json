@@ -1,27 +1,20 @@
 {
   "main": {
-    "id": "9bba77fc75bf8c0c",
+    "id": "3924275c65cd3663",
     "type": "split",
     "children": [
       {
-        "id": "d874cf6dda921c6d",
+        "id": "56101c8bf3e7f504",
         "type": "tabs",
         "children": [
           {
-            "id": "eaf6b6ecc6763957",
+            "id": "596a849d844f960f",
             "type": "leaf",
             "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Main Page.canvas",
-                "viewState": {
-                  "x": -15,
-                  "y": -96,
-                  "zoom": 0
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "Main Page"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -30,15 +23,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "1c079882fc4f7b49",
+    "id": "85e305864f5b4b8b",
     "type": "split",
     "children": [
       {
-        "id": "8274e68a7cbdddbb",
+        "id": "6c12c4a18e60a1e3",
         "type": "tabs",
         "children": [
           {
-            "id": "3868cd42461683a5",
+            "id": "9a295fffbf4d0553",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -51,7 +44,7 @@
             }
           },
           {
-            "id": "0450ae7afaf8af42",
+            "id": "4449a142bd5353c6",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -68,7 +61,7 @@
             }
           },
           {
-            "id": "f1592392e992a2ed",
+            "id": "ffba1565590cf509",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -84,20 +77,19 @@
     "width": 300
   },
   "right": {
-    "id": "5093178ef2dfb41e",
+    "id": "92f6b145a00994e0",
     "type": "split",
     "children": [
       {
-        "id": "7b377a0b8d8ee864",
+        "id": "efbefb14cf32959c",
         "type": "tabs",
         "children": [
           {
-            "id": "c7bf98fbaca2d020",
+            "id": "f5667c277273bf1f",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2025-03-12-unity-introdution-2/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,25 +99,24 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for index"
+              "title": "Backlinks"
             }
           },
           {
-            "id": "e6dd0c117e7b1d72",
+            "id": "591873f50037b4bf",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2025-03-12-unity-introdution-2/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from index"
+              "title": "Outgoing links"
             }
           },
           {
-            "id": "7afb85b0935b18f6",
+            "id": "76dc0c408782f1e9",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -140,18 +131,17 @@
             }
           },
           {
-            "id": "d93650e3c4fc6245",
+            "id": "684cbdfc949bd01f",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "2025-03-12-unity-introdution-2/index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of index"
+              "title": "Outline"
             }
           }
         ]
@@ -171,50 +161,27 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "eaf6b6ecc6763957",
+  "active": "9a295fffbf4d0553",
   "lastOpenFiles": [
-    "quartz/components/guides-tree.tsx",
-    "quartz/components/New Text Document.txt",
-    "quartz/components",
-    "quartz/New folder",
-    "quartz/public/Unity/Simple-Orbit-Camera/index.html",
-    "quartz/public/Unity/Simple-2D-Player-Controller/index.html",
-    "quartz/public/tags/sprites.html",
-    "quartz/public/Unity/Introduction/index.html",
-    "quartz/public/tags/sprite.html",
-    "quartz/public/Unity/Sprites-and-Spritesheet-Resources/index-og-image.webp",
-    "quartz/public/Unity/Simple-Orbit-Camera/index-og-image.webp",
-    "quartz/public/Unity/Simple-2D-Player-Controller/index-og-image.webp",
-    "quartz/public/Unity/Introduction/index-og-image.webp",
-    "quartz/public/Unity/Input-System-Quick-Start/index-og-image.webp",
-    "quartz/public/Unity/Glossary/index-og-image.webp",
-    "quartz/public/Unity/Full-Screen-Shaders/index-og-image.webp",
-    "quartz/public/Unity/First-Person-Controller/index-og-image.webp",
-    "quartz/public/Unity/CSharp-Resources/index-og-image.webp",
-    "quartz/public/Unity/Sprites-and-Spritesheet-Resources/index.html",
-    "quartz/public/tags/spritesheet.html",
-    "quartz/public/Unity/Advanced-CSharp/index-og-image.webp",
-    "quartz/content/Unity/Sprites and Spritesheet Resources/index.md",
-    "quartz/content/Unity/Simple Orbit Camera/index.md",
-    "quartz/content/Unity/Simple 2D Player Controller/index.md",
-    "quartz/content/Unity/Introduction/index.md",
-    "quartz/content/Unity/Input System Quick-Start/index.md",
-    "quartz/content/Unity/Glossary/index.md",
-    "quartz/content/Unity/Full-Screen Shaders/index.md",
-    "quartz/content/Unity/First Person Controller/index.md",
-    "quartz/content/Unity/CSharp Resources/index.md",
-    "quartz/content/Unity/Advanced CSharp/index.md",
-    "quartz/public/Main-Page.canvas",
-    "quartz/content/Main Page.canvas",
-    "Main Page/Welcome.md",
-    "Main Page.canvas",
-    "Unity/Sprites and Spritesheet Resources/index.md",
-    "2024-12-06-blender-placeholder-shp-icon-iconblender-label/index.md",
-    "2024-12-06-placeholder-shp-icon-iconblender-godot/index.md",
-    "2024-12-06-placeholder-shp-icon-iconunreal/index.md",
-    "Unity/Glossary/index.md",
-    "Unity/First Person Controller/index.md",
-    "Unity/Introduction/index.md",
-    "Misc/Untitled.md"
+    "quartz/content/sortspec.md",
+    "quartz/content/Untitled.md",
+    "quartz/content/Unity/2D/Simple 2D Player Controller/images/image.png",
+    "quartz/content/Unity/2D/Simple 2D Player Controller/images/image-9.png",
+    "quartz/content/Unity/2D/Simple 2D Player Controller/images/image-81.png",
+    "quartz/content/Unity/2D/Simple 2D Player Controller/images/image-80.png",
+    "quartz/content/Unity/2D/Simple 2D Player Controller/images/image-8.png",
+    "quartz/content/Unity/2D/Simple 2D Player Controller/images/image-79.png",
+    "quartz/content/Unity/2D/Simple 2D Player Controller/images/image-78.png",
+    "quartz/content/Unity/2D/Simple 2D Player Controller/images/image-77.png",
+    "quartz/content/Unity/2D/Simple 2D Player Controller/images/image-76.png",
+    "quartz/content/Unity/2D/Simple 2D Player Controller/images/image-75.png",
+    "quartz/content/Unity/2D/Simple 2D Player Controller/index.md",
+    "quartz/content/Unity/2D/Simple 2D Player Controller/images",
+    "quartz/content/Unity/2D/Sprites and Spritesheet Resources/index.md",
+    "quartz/content/Unity/2D/Sprites and Spritesheet Resources/images",
+    "quartz/content/Unity/2D/Simple 2D Player Controller",
+    "quartz/content/Unity/2D/Sprites and Spritesheet Resources",
+    "quartz/content/Unity/2D/index.md",
+    "quartz/content/Unity/2D"
   ]
 }

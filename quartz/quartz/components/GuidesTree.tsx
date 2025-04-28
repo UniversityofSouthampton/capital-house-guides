@@ -3,62 +3,77 @@ import { QuartzComponentProps } from "./types"
 export default (() => {
 
     function GuidesTree(props: QuartzComponentProps) {
-      const curFile = props.fileData.relativePath?.split('/').slice(0, -1).join('/');
-      let curFileLocalOrderTag = props.fileData.frontmatter?.localOrder?.toString();
-      if(props.fileData.frontmatter?.localOrder?.valueOf == undefined) {curFileLocalOrderTag = "0"}
-      let nodesParam : string = 'current='+curFile+"<lo:"+curFileLocalOrderTag+'>&all=';
+      let curFile = props.fileData.slug;
+      curFile = curFile.replaceAll('-', ' ');
+         if(curFile.split('/').at(-1) === "index"){
+          curFile = curFile.split('/').slice(0, -1).join('/');
+         }
+      let nodesParam : string = 'current='+curFile+'&all=';
       props.fileData
       props.allFiles.forEach((f) => {
-         let file = f.relativePath?.split('/').slice(0, -1).join('/');
-         let localOrderTag = f.frontmatter?.localOrder?.toString();
-         if(f.frontmatter?.localOrder?.valueOf == undefined) {localOrderTag = "0"}
-         nodesParam += file+"<lo:"+localOrderTag+">;";
+         let file = f.slug;
+         file = file.replaceAll('-', ' ');
+         if(file.split('/').at(-1) === "index"){
+          file = file.split('/').slice(0, -1).join('/');
+         }
+         nodesParam += file+";";
        });
       nodesParam+='"';
       nodesParam = btoa(nodesParam);
-      let url : string = 'https://tech.wsagames.com/guides/tree?data='+nodesParam;
+      let url : string = 'https://guides.techhub.wsagames.com/tree?data='+nodesParam;
       return (
         <div id="guidetree-component"> 
           <div id="guidetree-container">
             <iframe id="guidetree-iframe" src={url}></iframe>
-            <button id="guidetree-expand">Expand</button>
-          
+            <div id="guidetree-expand">
+              <svg width="30px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 10V5L8 5M3 14V19L8 19M16 5H21V10M21 14V19H16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
           </div>
         </div>
       )
     }
    
     GuidesTree.afterDOMLoaded = `
-      document.getElementsByClassName("right sidebar")[0].style.zIndex = "2";
-      let expanded = false;
-      document.getElementById('guidetree-expand').onclick = () => {
-       expanded = !expanded;
-        if(expanded){
-            document.getElementById("guidetree-component").style.position="fixed";
-            document.getElementById("guidetree-component").style.left="50%";
-            document.getElementById("guidetree-component").style.top="50%";
-            document.getElementById("guidetree-component").style.width="80%";
-            document.getElementById("guidetree-component").style.height="80%";
-            document.getElementById("guidetree-component").style.transform="translate(-50%,-50%)";
+      if (document.getElementById("guidetree-component")){
+      
+        let expanded = false;
+        document.getElementById('guidetree-expand').onclick = () => {
+        expanded = !expanded;
+          if(expanded){
+              document.getElementById("guidetree-component").style.position="fixed";
+              document.getElementById("guidetree-component").style.left="50%";
+              document.getElementById("guidetree-component").style.top="50%";
+              document.getElementById("guidetree-component").style.width="80%";
+              document.getElementById("guidetree-component").style.height="80%";
+              document.getElementById("guidetree-component").style.transform="translate(-50%,-50%)";
+          }
+          else
+          {
+              document.getElementById("guidetree-component").style.position="relative";
+              document.getElementById("guidetree-component").style.left="0px";
+              document.getElementById("guidetree-component").style.top="0px";
+              document.getElementById("guidetree-component").style.width="fit-content";
+              document.getElementById("guidetree-component").style.height="fit-content";
+              document.getElementById("guidetree-component").style.transform="translate(0px,0px)";
+          }
         }
-        else
-        {
-            document.getElementById("guidetree-component").style.position="relative";
-            document.getElementById("guidetree-component").style.left="0px";
-            document.getElementById("guidetree-component").style.top="0px";
-            document.getElementById("guidetree-component").style.width="fit-content";
-            document.getElementById("guidetree-component").style.height="fit-content";
-            document.getElementById("guidetree-component").style.transform="translate(0px,0px)";
-        }
-      }
 
-      window.addEventListener("message", (e) => {
-      if(e.data.func == "quartzSetBodySlug"){
-        console.log(e.data.message);
-        let slug = e.data.message.replaceAll(" ", "-");
-        window.location.pathname = slug;
+        window.addEventListener("message", (e) => {
+        if(e.data.func == "quartzSetBodySlug"){
+          console.log(e.data.message);
+          let slug = e.data.message.replaceAll(" ", "-");
+          window.location.pathname = slug;
+        }
+        },false);
+
+        document.addEventListener("themechange", (e) => {
+          console.log("Theme changed to " + e.detail.theme) // either "light" or "dark"
+          let filter = e.detail.theme == "light" ? "invert(1)" : "invert(0)"
+          document.getElementById("guidetree-component").style.filter = filter;
+        })
       }
-      },false);
 
     `
     
@@ -71,6 +86,8 @@ export default (() => {
         height: fit-content;
         width: 100%;
         padding: 3px;
+        z-index:3;
+        transition: all 0.25s ease;
       }
       #guidetree-container {
         background: #222;
@@ -82,8 +99,16 @@ export default (() => {
         border:none;
       }
       #guidetree-expand{
-        float: right;
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
         z-index: 5;
+        margin-top: -20px;
+      }
+      #guidetree-expand > svg{
+        width: 100%;
+        height: 100%;
+        color: white;
       }
       #guidetree-iframe{
         position: relative;

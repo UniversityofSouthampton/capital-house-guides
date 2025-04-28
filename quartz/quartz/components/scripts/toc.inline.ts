@@ -10,6 +10,12 @@ const observer = new IntersectionObserver((entries) => {
         tocEntryElements.forEach((tocEntryElement) => tocEntryElement.classList.remove("in-view"))
       }
     }
+    tocEntryElements.forEach((tocEntryElement) => tocEntryElement.addEventListener("click", function(){
+      let url = window.location.pathname+tocEntryElement.getAttribute("href");
+      let msg = {'func':'guidesPageChange', 'msg':url};
+      window.parent.postMessage(msg,"*");
+      console.log(url);
+    }))
   }
 })
 

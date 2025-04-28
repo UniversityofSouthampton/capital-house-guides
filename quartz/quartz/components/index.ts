@@ -23,6 +23,7 @@ import Comments from "./Comments"
 import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
 import GuidesTree from "./GuidesTree"
+import ReaderMode from "./ReaderMode"
 
 export {
   ArticleTitle,
@@ -50,4 +51,5 @@ export {
   Flex,
   ConditionalRender,
   GuidesTree,
+  ReaderMode
 }

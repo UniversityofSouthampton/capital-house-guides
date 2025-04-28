@@ -1,0 +1,220 @@
+{
+  "main": {
+    "id": "c2473640630525ad",
+    "type": "split",
+    "children": [
+      {
+        "id": "d70961a33a2fc165",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2934d897f279970a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0_Induction/1_Studio/2_Steam PC.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2_Steam PC"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "eb814fbe3b6dd582",
+    "type": "split",
+    "children": [
+      {
+        "id": "1b89111e745d945f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d9d4b0eb0b84bf78",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "21ea8dac3d4c66ba",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "915ff41d86a8b534",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "35ddd72637fca193",
+    "type": "split",
+    "children": [
+      {
+        "id": "89373f4989d091ae",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "13fe67902806ba47",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "1_Unity/0_Introduction/0_Your First Project.md",
+                "collapseAll": false,
+                "extraContext": true,
+                "sortOrder": "alphabetical",
+                "showSearch": true,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 0_Your First Project"
+            }
+          },
+          {
+            "id": "7614a49c6dd33ce0",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "2_Blender/index.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from index"
+            }
+          },
+          {
+            "id": "81a6460901e972c7",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "17d1b127bf2040df",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "2_Blender/index.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of index"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "2934d897f279970a",
+  "lastOpenFiles": [
+    "0_Induction/1_Studio/1_Studio 32.md",
+    "0_Induction/images",
+    "0_Induction/images/studio 32 av guide.png",
+    "0_Induction/1_Studio/2_Steam PC.md",
+    "0_Induction/1_Studio/0_Policy.md",
+    "0_Induction/1_Studio/index.md",
+    "0_Induction/0_Core Tech/index.md",
+    "0_Induction/0_Core Tech/0_Using the PCs.md",
+    "0_Induction/1_Studio",
+    "0_Induction/index.md",
+    "0_Induction/0_Core Tech",
+    "1_Unity/3_Shaders/0_Full-Screen Shaders.md",
+    "0_Core Skills/Untitled",
+    "1_Unity/0_Introduction/4_Input System Quick-Start.md",
+    "1_Unity/index.md",
+    "index.md",
+    "1_Unity/0_Introduction/index.md",
+    "1_Unity/3_Shaders/index.md",
+    "1_Unity/2_2D/1_Simple 2D Player Controller.md",
+    "1_Unity/2_2D/0_Sprites and Spritesheet Resources.md",
+    "1_Unity/1_Coding/1_Advanced CSharp.md",
+    "1_Unity/1_Coding/0_CSharp Resources.md",
+    "1_Unity/0_Introduction/3_Simple Orbit Camera.md",
+    "1_Unity/0_Introduction/2_First Person Controller.md",
+    "1_Unity/0_Introduction/0_Your First Project.md",
+    "1_Unity/0_Introduction/images/image-4 2.png",
+    "1_Unity/0_Introduction/1_Glossary.md",
+    "1_Unity/0_Introduction/images/image-5 1.png",
+    "GOPR1321-scaled.webp",
+    "0_Induction/0_Core Tech/2_GitHub and Version Control.md",
+    "0_Induction/0_Core Tech/1_MD and Obsidian.md",
+    "2_Blender/index.md",
+    "1_Unity/2_2D/index.md",
+    "1_Unity/2_2D/images/image.png",
+    "1_Unity/2_2D/images/0a90c44e-cd63-4a9a-bef0-03125199d7e1_image8.png",
+    "1_Unity/2_2D/images",
+    "1_Unity/1_Coding/images/image-1024x406.png",
+    "1_Unity/1_Coding/images/image-5.png",
+    "1_Unity/1_Coding/images/image-1-1024x424.png",
+    "1_Unity/1_Coding/images/image-1.png",
+    "1_Unity/1_Coding/images",
+    "1_Unity/0_Introduction/images",
+    "2_Blender",
+    "0_Core Skills/1_MD and Obsidian",
+    "0_Core Skills/2_GitHub and Version Control",
+    "Main Page.canvas"
+  ]
+}

@@ -148,6 +148,7 @@ declare module "vfile" {
         socialImage: string
         comments: boolean | string
         localOrder: Number
+        author: string
       }>
   }
 }

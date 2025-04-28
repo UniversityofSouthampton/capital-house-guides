@@ -1,49 +1,79 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url>
-    <loc>https://tech.wsagames.com/guides/Unity/Coding/Advanced-CSharp/</loc>
-    <lastmod>2025-04-15T18:41:39.000Z</lastmod>
+    <loc>https://guides.techhub.wsagames.com/0_Induction/0_Core-Tech/0_Using-the-PCs</loc>
+    <lastmod>2025-04-25T13:29:57.921Z</lastmod>
   </url><url>
-    <loc>https://tech.wsagames.com/guides/Unity/Coding/CSharp-Resources/</loc>
-    <lastmod>2025-04-15T18:41:39.000Z</lastmod>
+    <loc>https://guides.techhub.wsagames.com/0_Induction/0_Core-Tech/1_MD-and-Obsidian</loc>
+    <lastmod>2025-04-25T13:29:59.694Z</lastmod>
   </url><url>
-    <loc>https://tech.wsagames.com/guides/Unity/Coding/</loc>
-    <lastmod>2025-04-15T18:41:39.000Z</lastmod>
+    <loc>https://guides.techhub.wsagames.com/0_Induction/0_Core-Tech/2_GitHub-and-Version-Control</loc>
+    <lastmod>2025-04-25T13:30:00.811Z</lastmod>
   </url><url>
-    <loc>https://tech.wsagames.com/guides/Unity/Introduction/2D/Simple-2D-Player-Controller/</loc>
-    <lastmod>2025-04-15T18:41:39.000Z</lastmod>
+    <loc>https://guides.techhub.wsagames.com/0_Induction/0_Core-Tech/</loc>
+    <lastmod>2025-04-25T14:55:33.049Z</lastmod>
   </url><url>
-    <loc>https://tech.wsagames.com/guides/Unity/Introduction/2D/Sprites-and-Spritesheet-Resources/</loc>
-    <lastmod>2025-04-15T18:41:39.000Z</lastmod>
+    <loc>https://guides.techhub.wsagames.com/0_Induction/1_Studio/0_Policy</loc>
+    <lastmod>2025-04-25T14:59:22.758Z</lastmod>
   </url><url>
-    <loc>https://tech.wsagames.com/guides/Unity/Introduction/2D/</loc>
-    <lastmod>2025-04-15T18:41:39.000Z</lastmod>
+    <loc>https://guides.techhub.wsagames.com/0_Induction/1_Studio/1_Studio-32</loc>
+    <lastmod>2025-04-25T15:03:13.384Z</lastmod>
   </url><url>
-    <loc>https://tech.wsagames.com/guides/Unity/Introduction/First-3D-Game/</loc>
-    <lastmod>2025-04-15T18:41:39.000Z</lastmod>
+    <loc>https://guides.techhub.wsagames.com/0_Induction/1_Studio/2_Steam-PC</loc>
+    <lastmod>2025-04-25T15:09:25.942Z</lastmod>
   </url><url>
-    <loc>https://tech.wsagames.com/guides/Unity/Introduction/First-Person-Controller/</loc>
-    <lastmod>2025-04-15T18:41:39.000Z</lastmod>
+    <loc>https://guides.techhub.wsagames.com/0_Induction/1_Studio/</loc>
+    <lastmod>2025-04-25T14:55:45.842Z</lastmod>
   </url><url>
-    <loc>https://tech.wsagames.com/guides/Unity/Introduction/Glossary/</loc>
-    <lastmod>2025-04-15T18:41:39.000Z</lastmod>
+    <loc>https://guides.techhub.wsagames.com/0_Induction/</loc>
+    <lastmod>2025-04-25T14:54:21.522Z</lastmod>
   </url><url>
-    <loc>https://tech.wsagames.com/guides/Unity/Introduction/Input-System-Quick-Start/</loc>
-    <lastmod>2025-04-15T18:41:39.000Z</lastmod>
+    <loc>https://guides.techhub.wsagames.com/1_Unity/0_Introduction/0_Your-First-Project</loc>
+    <lastmod>2025-04-25T14:19:50.619Z</lastmod>
   </url><url>
-    <loc>https://tech.wsagames.com/guides/Unity/Introduction/Simple-Orbit-Camera/</loc>
-    <lastmod>2025-04-15T18:41:39.000Z</lastmod>
+    <loc>https://guides.techhub.wsagames.com/1_Unity/0_Introduction/1_Glossary</loc>
+    <lastmod>2025-04-23T21:19:42.795Z</lastmod>
   </url><url>
-    <loc>https://tech.wsagames.com/guides/Unity/Introduction/</loc>
-    <lastmod>2025-04-15T18:41:39.000Z</lastmod>
+    <loc>https://guides.techhub.wsagames.com/1_Unity/0_Introduction/2_First-Person-Controller</loc>
+    <lastmod>2025-04-25T14:31:24.572Z</lastmod>
   </url><url>
-    <loc>https://tech.wsagames.com/guides/Unity/Shaders/Full-Screen-Shaders/</loc>
-    <lastmod>2025-04-15T18:41:39.000Z</lastmod>
+    <loc>https://guides.techhub.wsagames.com/1_Unity/0_Introduction/3_Simple-Orbit-Camera</loc>
+    <lastmod>2025-04-25T14:32:03.539Z</lastmod>
   </url><url>
-    <loc>https://tech.wsagames.com/guides/Unity/Shaders/</loc>
-    <lastmod>2025-04-15T18:41:39.000Z</lastmod>
+    <loc>https://guides.techhub.wsagames.com/1_Unity/0_Introduction/4_Input-System-Quick-Start</loc>
+    <lastmod>2025-04-25T14:36:54.139Z</lastmod>
   </url><url>
-    <loc>https://tech.wsagames.com/guides/Unity/</loc>
-    <lastmod>2025-04-15T18:41:39.000Z</lastmod>
+    <loc>https://guides.techhub.wsagames.com/1_Unity/0_Introduction/</loc>
+    <lastmod>2025-04-23T21:19:29.340Z</lastmod>
   </url><url>
-    <loc>https://tech.wsagames.com/guides/</loc>
+    <loc>https://guides.techhub.wsagames.com/1_Unity/1_Coding/0_CSharp-Resources</loc>
+    <lastmod>2025-04-23T21:37:09.421Z</lastmod>
+  </url><url>
+    <loc>https://guides.techhub.wsagames.com/1_Unity/1_Coding/1_Advanced-CSharp</loc>
+    <lastmod>2025-04-23T21:25:59.615Z</lastmod>
+  </url><url>
+    <loc>https://guides.techhub.wsagames.com/1_Unity/1_Coding/</loc>
+    <lastmod>2025-04-23T21:40:50.291Z</lastmod>
+  </url><url>
+    <loc>https://guides.techhub.wsagames.com/1_Unity/2_2D/0_Sprites-and-Spritesheet-Resources</loc>
+    <lastmod>2025-04-23T21:37:00.305Z</lastmod>
+  </url><url>
+    <loc>https://guides.techhub.wsagames.com/1_Unity/2_2D/1_Simple-2D-Player-Controller</loc>
+    <lastmod>2025-04-23T21:29:44.984Z</lastmod>
+  </url><url>
+    <loc>https://guides.techhub.wsagames.com/1_Unity/2_2D/</loc>
+    <lastmod>2025-04-23T21:40:53.296Z</lastmod>
+  </url><url>
+    <loc>https://guides.techhub.wsagames.com/1_Unity/3_Shaders/0_Full-Screen-Shaders</loc>
+    <lastmod>2025-04-25T14:53:59.985Z</lastmod>
+  </url><url>
+    <loc>https://guides.techhub.wsagames.com/1_Unity/3_Shaders/</loc>
+    <lastmod>2025-04-23T21:40:57.855Z</lastmod>
+  </url><url>
+    <loc>https://guides.techhub.wsagames.com/1_Unity/</loc>
+    <lastmod>2025-04-23T20:47:07.759Z</lastmod>
+  </url><url>
+    <loc>https://guides.techhub.wsagames.com/2_Blender/</loc>
+    <lastmod>2025-04-22T15:18:32.005Z</lastmod>
+  </url><url>
+    <loc>https://guides.techhub.wsagames.com/</loc>
     <lastmod>2025-04-15T14:19:14.000Z</lastmod>
   </url></urlset>

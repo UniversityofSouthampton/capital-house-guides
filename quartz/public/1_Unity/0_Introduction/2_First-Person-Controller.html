@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en"><head><title>First Person Controller</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Guides Repo"/><meta property="og:title" content="First Person Controller"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="First Person Controller"/><meta name="twitter:description" content="Creating a simple First Person Controller Learning any application is best done through practice! To really solidify the above concepts, lets create a very basic First Person Controller."/><meta property="og:description" content="Creating a simple First Person Controller Learning any application is best done through practice! To really solidify the above concepts, lets create a very basic First Person Controller."/><meta property="og:image:alt" content="Creating a simple First Person Controller Learning any application is best done through practice! To really solidify the above concepts, lets create a very basic First Person Controller."/><meta property="twitter:domain" content="guides.techhub.wsagames.com"/><meta property="og:url" content="https://guides.techhub.wsagames.com/1_Unity/0_Introduction/2_First-Person-Controller"/><meta property="twitter:url" content="https://guides.techhub.wsagames.com/1_Unity/0_Introduction/2_First-Person-Controller"/><link rel="icon" href="../../static/icon.png"/><meta name="description" content="Creating a simple First Person Controller Learning any application is best done through practice! To really solidify the above concepts, lets create a very basic First Person Controller."/><meta name="generator" content="Quartz"/><link href="../../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiQzpcXExvY2FsXFx0ZWNoLWd1aWRlcy12YXVsdFxccXVhcnR6XFxxdWFydHpcXGNvbXBvbmVudHNcXHN0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://guides.techhub.wsagames.com/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://guides.techhub.wsagames.com/1_Unity/0_Introduction/2_First-Person-Controller-og-image.webp"/><meta property="og:image:url" content="https://guides.techhub.wsagames.com/1_Unity/0_Introduction/2_First-Person-Controller-og-image.webp"/><meta name="twitter:image" content="https://guides.techhub.wsagames.com/1_Unity/0_Introduction/2_First-Person-Controller-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="1_Unity/0_Introduction/2_First-Person-Controller"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../..">Guides Repo</a></h2><div class="spacer mobile-only"></div><div style="display: flex; flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><p>Search</p><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" class="readerIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="4" width="12" height="16" rx="1"></rect><line x1="9" y1="8" x2="15" y2="8"></line><line x1="9" y1="12" x2="15" y2="12"></line><line x1="9" y1="16" x2="13" y2="16"></line></svg></button></div></div><div id="guidetree-component"><div id="guidetree-container"><iframe id="guidetree-iframe" src="https://guides.techhub.wsagames.com/tree?data=Y3VycmVudD0xX1VuaXR5LzBfSW50cm9kdWN0aW9uLzJfRmlyc3QgUGVyc29uIENvbnRyb2xsZXImYWxsPTBfSW5kdWN0aW9uLzBfQ29yZSBUZWNoLzBfVXNpbmcgdGhlIFBDczswX0luZHVjdGlvbi8wX0NvcmUgVGVjaC8xX01EIGFuZCBPYnNpZGlhbjswX0luZHVjdGlvbi8wX0NvcmUgVGVjaC8yX0dpdEh1YiBhbmQgVmVyc2lvbiBDb250cm9sOzBfSW5kdWN0aW9uLzBfQ29yZSBUZWNoOzBfSW5kdWN0aW9uLzFfU3R1ZGlvLzBfUG9saWN5OzBfSW5kdWN0aW9uLzFfU3R1ZGlvLzFfU3R1ZGlvIDMyOzBfSW5kdWN0aW9uLzFfU3R1ZGlvLzJfU3RlYW0gUEM7MF9JbmR1Y3Rpb24vMV9TdHVkaW87MF9JbmR1Y3Rpb247MV9Vbml0eS8wX0ludHJvZHVjdGlvbi8wX1lvdXIgRmlyc3QgUHJvamVjdDsxX1VuaXR5LzBfSW50cm9kdWN0aW9uLzFfR2xvc3Nhcnk7MV9Vbml0eS8wX0ludHJvZHVjdGlvbi8yX0ZpcnN0IFBlcnNvbiBDb250cm9sbGVyOzFfVW5pdHkvMF9JbnRyb2R1Y3Rpb24vM19TaW1wbGUgT3JiaXQgQ2FtZXJhOzFfVW5pdHkvMF9JbnRyb2R1Y3Rpb24vNF9JbnB1dCBTeXN0ZW0gUXVpY2sgU3RhcnQ7MV9Vbml0eS8wX0ludHJvZHVjdGlvbjsxX1VuaXR5LzFfQ29kaW5nLzBfQ1NoYXJwIFJlc291cmNlczsxX1VuaXR5LzFfQ29kaW5nLzFfQWR2YW5jZWQgQ1NoYXJwOzFfVW5pdHkvMV9Db2Rpbmc7MV9Vbml0eS8yXzJELzBfU3ByaXRlcyBhbmQgU3ByaXRlc2hlZXQgUmVzb3VyY2VzOzFfVW5pdHkvMl8yRC8xX1NpbXBsZSAyRCBQbGF5ZXIgQ29udHJvbGxlcjsxX1VuaXR5LzJfMkQ7MV9Vbml0eS8zX1NoYWRlcnMvMF9GdWxsIFNjcmVlbiBTaGFkZXJzOzFfVW5pdHkvM19TaGFkZXJzOzFfVW5pdHk7Ml9CbGVuZGVyOzsi"></iframe><div id="guidetree-expand"><svg width="30px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 10V5L8 5M3 14V19L8 19M16 5H21V10M21 14V19H16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>a.slugSegment.localeCompare(b.slugSegment)&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-content"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div class="explorer-content" aria-expanded="false"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../1_Unity/">Unity Homepage</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../1_Unity/0_Introduction/">Introduction</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>First Person Controller</a></div></nav><h1 class="article-title">First Person Controller</h1><p show-comma="true" class="content-meta"><span>Written by Ross Popovs</span><time datetime="2025-04-25T14:31:24.572Z">25 Apr 2025</time><span>10 min read</span></p><ul class="tags"><li><a href="../../tags/2d" class="internal tag-link">2d</a></li><li><a href="../../tags/introduction" class="internal tag-link">introduction</a></li><li><a href="../../tags/scripting" class="internal tag-link">scripting</a></li><li><a href="../../tags/unity" class="internal tag-link">unity</a></li></ul></div></div><article class="popover-hint"><h1 id="creating-a-simple-first-person-controller">Creating a simple First Person Controller<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#creating-a-simple-first-person-controller" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p>Learning any application is best done through practice! To really solidify the above concepts, lets create a very basic First Person Controller. This will also introduce you to basic scripting!</p>
+<h2 id="decomposing-the-task">Decomposing the task<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#decomposing-the-task" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Going from nothing to a fully controllable character seems like a daunting task, so let’s break it down! When it comes to implementing any feature its a good idea to decompose it into smaller tasks. So what is involved in making a first-person controller?</p>
+<h2 id="parenting-objects-create-first-person-camera">Parenting Objects (Create First-Person Camera)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#parenting-objects-create-first-person-camera" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>In your scene you will a GameObject named “Main Camera” by default. This object contains a Camera component and the output of the camera is displayed when you enter Play Mode.</p>
+<p>Currently the camera probably exists outside of the player, and for a first-person controller we want the camera to be from the perspective of the player’s eyes. To do this we need to make the camera gameobject a “Child” of the player.</p>
+<p>By making an object a child of another object it becomes “attached” and any transformations on the parent are subsequently applied to the child.</p>
+<p><strong>To make the “Main Camera” object a child of the “Capsule” object, simply drag it over in the hierarchy.</strong></p>
+<p><strong>Set the position of the camera object to X: 0, Y: 0.5, Z: 0.</strong> Notice how now that the camera is a child of the capsule, its position is relative to the capsule. By setting the position to those values, the camera is 0.5 units above the center of the capsule, or roughly at eye-level.</p>
+<p><strong>Enter Play Mode - you are now seeing the “First Person View” of the capsule!</strong> Not much is visible yet. As the camera is inside the capsule, the capsule itself is not visible but this okay and is what we want.</p>
+<h2 id="moving-the-capsule-player">Moving the Capsule Player<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#moving-the-capsule-player" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Whats next? Well we probably want to be able to move the capsule (ie our player) using the keyboard</p>
+<h3 id="character-controller-component">Character Controller Component<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#character-controller-component" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>The reason we didn’t add a rigidbody to our player was because Unity offers a special component - the <strong>Character Controller</strong> - which acts as a rigidbody and collider in one, with special behavior designed specifically for controlling a character in a 3D environment.</p>
+<p><strong>Why use a Character Controller and not a Rigidbody for a player?</strong><br/>
+Most games don’t treat players as realistic objects, and actually the way that we expect our character to move isn’t exactly super realistic. Unity describes this best:</p>
+<ul>
+<li><em>The traditional Doom-style first person controls are not physically realistic. The character runs 90 miles per hour, comes to a halt immediately and turns on a dime. Because it is so unrealistic, use of Rigidbodies and physics to create this behavior is impractical and will feel wrong. The solution is the specialized <strong>Character Controller</strong>. It is simply a capsule shaped <strong>Collider</strong> which can be told to move in some direction from a script. The Controller will then carry out the movement but be constrained by <strong>collisions</strong>. It will slide along walls, walk up stairs (if they are lower than the <strong>Step Offset</strong>) and walk on slopes within the <strong>Slope Limit</strong>.</em></li>
+</ul>
+<p>That’s not to say using a Rigidbody, or any method is incorrect. It all depends on how you want your movement to function and feel. For a physics-based platformer for example, you would want to use a rigidbody and let Unity handle all the work. For a parkour game, you may use a Character Controller but define and handle all of the physics manually through a script (giving you explicit control of how player velocity is calculate, for example).</p>
+<p><strong>Each approach has its own pros and cons, but we will be using CharacterController for this guide as it is robust and gives you more control over the movement of the player.</strong></p>
+<p><strong>Remove the Capsule Collider on your player and add a Character Controller component</strong>. The inspector for your player should look like this:</p>
+<h3 id="using-the-character-controller-your-first-script">Using the Character Controller (Your first Script)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#using-the-character-controller-your-first-script" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>To use the character controller component, we will need to create our own script. This guide assumes basic programming knowledge. Don’t worry if you don’t have this, as all code is provided and explained.</p>
+<h4 id="set-up-your-scripting-environment">Set Up Your Scripting Environment<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#set-up-your-scripting-environment" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><strong>Within your Assets folder, create a new folder for Scripts</strong></p>
+</li>
+<li>
+<p><strong>Select your default Script Editor</strong></p>
+<ul>
+<li>
+<p><strong>At the top of the screen, go to Edit <span>→</span> Preferences</strong></p>
+</li>
+<li>
+<p><strong>Select the External Tools tab</strong></p>
+</li>
+<li>
+<p><strong>Set your External Script Editor to ‘Rider</strong>’</p>
+</li>
+<li>
+<p><strong>Don’t change any other settings at this moment</strong></p>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="../../1_Unity/0_Introduction/images/image-32.png" width="auto" height="auto" alt/></p>
+<h4 id="create-a-script">Create a script<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#create-a-script" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p>Time to create your own script!</p>
+</li>
+<li>
+<p><strong>Within your Scripts folder, create a new script by right-clicking and selecting Create <span>→</span> C# Script</strong></p>
+</li>
+<li>
+<p><strong>Name your Script “BasicMovement” (no spaces):</strong></p>
+</li>
+</ul>
+<p><img src="../../1_Unity/0_Introduction/images/image-33.png" width="auto" height="auto" alt/></p>
+<ul>
+<li>
+<p>Convention recommends pascal case for script names</p>
+<ul>
+<li>E.g. PlayerController, CameraEffectsSystem, LevelOneProperties</li>
+</ul>
+</li>
+<li>
+<p><strong>Add your script to your capsule (same way you would add a component)</strong></p>
+</li>
+<li>
+<p><strong>Then</strong> <strong>double-click the script to open it within Rider</strong> <strong>(a C# script editor)</strong></p>
+</li>
+</ul>
+<h4 id="in-rider">In Rider<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#in-rider" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>You should now see this. What you are looking at is default code which unity generates any time you create a new script:</p>
+<p><img src="../../1_Unity/0_Introduction/images/image-39-1024x549.png" width="auto" height="auto" alt/></p>
+<p><strong>Notice the two functions <code>Start()</code> and <code>Update()</code></strong>, don’t worry about anything else for now. All you need to know is that you can write code within those functions (between the curly brackets below each respective function).<br/>
+<strong>Code that you write within <code>Start()</code> will only run once, when you enter Play Mode.</strong><br/>
+<strong>Code that you write within <code>Update()</code> will run every frame (hundreds of times per second)</strong></p>
+<p><img src="../../1_Unity/0_Introduction/images/image-42-1024x274.png" width="auto" height="auto" alt/></p>
+<h4 id="interacting-with-the-character-controller-component">Interacting with the Character Controller Component<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#interacting-with-the-character-controller-component" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>In order for our script to interact with the Character Controller component, we need to create a reference to it within our script:</p>
+<p>C#</p>
+<pre><code>using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class BasicMovement : MonoBehaviour
+{
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        var characterController = GetComponent&lt;CharacterController>();
+    }
+}
+</code></pre>
+<p>We can get a reference to any component on the same object as the script using using <code>GetComponent&lt;>()</code>. On line 16 we use this to save the reference in a variable called <code>characterController</code>.</p>
+<h4 id="adding-movement">Adding Movement<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#adding-movement" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>By default, the Character Controller does not handle gravity. If we want our player to be affected by a gravity, we have to ‘activate it’ by triggering a move.</p>
+<p>C#</p>
+<pre><code>using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class BasicMovement : MonoBehaviour
+{
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        var characterController = GetComponent&lt;CharacterController>();
+        var velocity = transform.forward;
+        characterController.SimpleMove(transform.forward);
+    }
+}
+</code></pre>
+<p>The above code makes the character move forward. Each time we use <code>SimpleMove()</code> the component also applies gravity.</p>
+<p>Lets add a check for input so we only move the player forward when the W key is pressed:</p>
+<p>C#</p>
+<pre><code>using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class BasicMovement : MonoBehaviour
+{
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        var characterController = GetComponent&lt;CharacterController>();
+        var velocity = Vector3.zero;
+        
+        if(Input.GetKey(KeyCode.W))
+        {
+            velocity += transform.forward;
+        }
+        
+        characterController.SimpleMove(velocity);
+    }
+}
+</code></pre>
+<p>Each frame, the velocity is reset to zero. If W is pressed, we are adding the forward direction to the velocity.</p>
+<p>Repeat for the other directions:</p>
+<p>C#</p>
+<pre><code>using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class BasicMovement : MonoBehaviour
+{
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        var characterController = GetComponent&lt;CharacterController>();
+        var velocity = Vector3.zero;
+        
+        if(Input.GetKey(KeyCode.W))
+        {
+            velocity += transform.forward;
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
+            velocity -= transform.forward;
+            //to add &quot;backwards&quot; we subtract &quot;forwards&quot;
+        }
+        if (Input.GetKey(KeyCode.D))
+        {
+            velocity += transform.right;
+        }
+        if (Input.GetKey(KeyCode.A))
+        {
+            velocity -= transform.right;
+            //to add &quot;left&quot; with subtract &quot;right&quot;
+        }
+        
+        characterController.SimpleMove(velocity.normalized);
+    }
+}
+</code></pre>
+<p>You might notice that when moving diagonally the player moves faster. To fix this we replace <code>velocity</code> with <code>velocity.normalized</code> on line 39. Learn why this works</p>
+<p>Lets add a new speed property to our script:</p>
+<p>C#</p>
+<pre><code>using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class BasicMovement : MonoBehaviour
+{
+
+		public float speed;
+		
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        var characterController = GetComponent&lt;CharacterController>();
+        var velocity = Vector3.zero;
+        
+        if(Input.GetKey(KeyCode.W))
+        {
+            velocity += transform.forward;
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
+            velocity -= transform.forward;
+            //to add &quot;backwards&quot; we subtract &quot;forwards&quot;
+        }
+        if (Input.GetKey(KeyCode.D))
+        {
+            velocity += transform.right;
+        }
+        if (Input.GetKey(KeyCode.A))
+        {
+            velocity -= transform.right;
+            //to add &quot;left&quot; with subtract &quot;right&quot;
+        }
+        
+        characterController.SimpleMove(velocity.normalized*speed);
+    }
+}
+</code></pre>
+<p>We can create a new property for our script by creating a public variable outside of a function (usually at the top of the script)</p>
+<p><img src="../../1_Unity/0_Introduction/images/image-6.png" width="auto" height="auto" alt/></p>
+<p>You are now able to change the speed within the editor and even in play mode. <strong>Set this to a value other than 0</strong> (what happens if you set it to a negative number?)</p>
+<p>One last thing for movement - if you have any rigidbody objects in your scene, you will notice that they do not get pushed by the capsule. For this to happen, we have to add velocity to the object whenever the CharacterController detects a collision:</p>
+<p>C#</p>
+<pre><code>using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class BasicMovement : MonoBehaviour
+{
+    public float speed;
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        var characterController = GetComponent&lt;CharacterController>();
+        var velocity = Vector3.zero;
+
+        if(Input.GetKey(KeyCode.W))
+        {
+            velocity += transform.forward;
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
+            velocity -= transform.forward;
+        }
+        if (Input.GetKey(KeyCode.D))
+        {
+            velocity += transform.right;
+        }
+        if (Input.GetKey(KeyCode.A))
+        {
+            velocity -= transform.right;
+        }
+        
+        characterController.SimpleMove(velocity.normalized*speed);
+    }
+
+    void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        Rigidbody otherObject = hit.collider.attachedRigidbody;
+        
+        // if object has no rigidbody or shouldnt be movable, return (cancel this function)
+        if (otherObject == null || otherObject.isKinematic) {
+            return;
+        } 
+        
+        otherObject.velocity = hit.moveDirection;
+    }
+}
+</code></pre>
+<p><code>OnControllerColliderHit</code> is triggered by the CharacterController component whenever it detects that a collision has happened.</p>
+<h2 id="mouse-controls">Mouse Controls<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#mouse-controls" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The third and last component of a first person controller is the ability to move the camera (and rotate the player) using the mouse.<br/>
+<strong>Create a new script called ‘MouseLook’</strong></p>
+<p><strong>For this part, the code is provided for you. Simply copy and paste it into your script.</strong> <strong>Whats the catch? This part will involve you completing a series of exercises in order to make the script work and to add further functionality. Primarily to test your knowledge, but also to get you more comfortable with editing code.</strong></p>
+<p>C#</p>
+<pre><code>using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class MouseLook : MonoBehaviour
+{
+    public GameObject cameraObject;
+    private Vector2 rotation;
+
+    void Start()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+    }
+
+    void Update()
+    {
+        rotation.y += Input.GetAxis(&quot;Mouse X&quot;) * 1.0f;
+        rotation.x += -Input.GetAxis(&quot;Mouse Y&quot;) * 1.0f;
+        rotation.x = Mathf.Clamp(rotation.x, -80, 80);
+        
+        //Rotate capsule left and right
+        transform.eulerAngles = new Vector2(0,rotation.y);
+        
+        //Rotate camera object up and down
+        cameraObject.transform.localRotation = Quaternion.Euler(rotation.x, 0, 0);
+    }
+}
+</code></pre>
+<p><strong>Add the script to your capsule player object</strong>. <strong>You should see that the script has a property, but maybe not one you have seen before. Instead of a number, this property wants a GameObject:</strong></p>
+<p><img src="../../1_Unity/0_Introduction/images/image-7.png" width="auto" height="auto" alt/></p>
+<p><strong>The script will not work (in fact it will create an error) unless this property is set.</strong>  This is left as an exercise for the reader.</p></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-content" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul class="toc-content overflow" id="list-1"><li class="depth-0"><a href="#creating-a-simple-first-person-controller" data-for="creating-a-simple-first-person-controller">Creating a simple First Person Controller</a></li><li class="depth-1"><a href="#decomposing-the-task" data-for="decomposing-the-task">Decomposing the task</a></li><li class="depth-1"><a href="#parenting-objects-create-first-person-camera" data-for="parenting-objects-create-first-person-camera">Parenting Objects (Create First-Person Camera)</a></li><li class="depth-1"><a href="#moving-the-capsule-player" data-for="moving-the-capsule-player">Moving the Capsule Player</a></li><li class="depth-2"><a href="#character-controller-component" data-for="character-controller-component">Character Controller Component</a></li><li class="depth-2"><a href="#using-the-character-controller-your-first-script" data-for="using-the-character-controller-your-first-script">Using the Character Controller (Your first Script)</a></li><li class="depth-1"><a href="#mouse-controls" data-for="mouse-controls">Mouse Controls</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Generated with<a href="https://quartz.jzhao.xyz/"> Quartz v4.5.0</a> © 2025<br/>'Tech Tree' component by <a href="https://www.linkedin.com/in/rosspopovs/">Ross Popovs</a> © 2025<i><br/>Except where otherwise noted, all guides and their contents are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC-BY-NC-SA</a>. Where possible, credit should be given to the original author followed by the University of Southampton.</i></p><ul></ul></footer></div></div></body><script type="application/javascript">function o(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.classList.contains("is-collapsed")?this.scrollHeight:t.scrollHeight;t.style.maxHeight=e+"px";let c=t,l=t.parentElement;for(;l;){if(!l.classList.contains("callout"))return;let i=l.classList.contains("is-collapsed")?l.scrollHeight:l.scrollHeight+c.scrollHeight;l.style.maxHeight=i+"px",c=l,l=l.parentElement}}function n(){let t=document.getElementsByClassName("callout is-collapsible");for(let s of t){let e=s.firstElementChild;if(!e)continue;e.addEventListener("click",o),window.addCleanup(()=>e.removeEventListener("click",o));let l=s.classList.contains("is-collapsed")?e.scrollHeight:s.scrollHeight;s.style.maxHeight=l+"px"}}document.addEventListener("nav",n);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script type="application/javascript">
+        const socket = new WebSocket('ws://localhost:3001')
+        // reload(true) ensures resources like images and scripts are fetched again in firefox
+        socket.addEventListener('message', () => document.location.reload(true))
+      </script><script src="../../postscript.js" type="module"></script></html>

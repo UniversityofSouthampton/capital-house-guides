@@ -14,8 +14,15 @@ export default ((opts?: Options) => {
     return (
       <footer class={`${displayClass ?? ""}`}>
         <p>
-          {i18n(cfg.locale).components.footer.createdWith}{" "}
-          <a href="https://quartz.jzhao.xyz/">Quartz v{version}</a> © {year}
+          Generated with 
+          <a href="https://quartz.jzhao.xyz/"> Quartz v{version}</a> © {year}
+          <br></br>
+          'Tech Tree' component by <a href="https://www.linkedin.com/in/rosspopovs/">Ross Popovs</a> © {year}
+          <i>
+            <br></br>
+            Except where otherwise noted, all guides and their contents are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC-BY-NC-SA</a>. 
+            Where possible, credit should be given to the original author followed by the University of Southampton.
+          </i>
         </p>
         <ul>
           {Object.entries(links).map(([text, link]) => (

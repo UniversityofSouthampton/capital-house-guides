@@ -1,70 +1,70 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
     <channel>
-      <title>Guides</title>
-      <link>https://tech.wsagames.com/guides</link>
-      <description>Last 10 notes on Guides</description>
+      <title>Guides Repo</title>
+      <link>https://guides.techhub.wsagames.com</link>
+      <description>Last 10 notes on Guides Repo</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>Unity - C# Advanced Practices + Tips and Tricks</title>
-    <link>https://tech.wsagames.com/guides/Unity/Coding/Advanced-CSharp/</link>
-    <guid>https://tech.wsagames.com/guides/Unity/Coding/Advanced-CSharp/</guid>
-    <description>This guide is ever-growing! There are hundreds of practices, cheats, tips and tricks within Unity - way too many to document in one go! This guide will updated over time, and students are welcome to contribute to it! Last updated: 13.02.25 Feel like you are familiar with C# scripting and want to tak...</description>
-    <pubDate>Tue, 15 Apr 2025 18:41:39 GMT</pubDate>
+    <title>Steam PC</title>
+    <link>https://guides.techhub.wsagames.com/0_Induction/1_Studio/2_Steam-PC</link>
+    <guid>https://guides.techhub.wsagames.com/0_Induction/1_Studio/2_Steam-PC</guid>
+    <description>Here at GDA we have a dedicated Alienware machine that you can login to at any time to play/test games.</description>
+    <pubDate>Fri, 25 Apr 2025 15:09:25 GMT</pubDate>
   </item><item>
-    <title>Unity - C# and Scripting Resources</title>
-    <link>https://tech.wsagames.com/guides/Unity/Coding/CSharp-Resources/</link>
-    <guid>https://tech.wsagames.com/guides/Unity/Coding/CSharp-Resources/</guid>
-    <description>Learning to code can seem daunting, but the only way to get better is through exposure! There are thousands of tutorials online all with unique learning styles.</description>
-    <pubDate>Tue, 15 Apr 2025 18:41:39 GMT</pubDate>
+    <title>Studio 32</title>
+    <link>https://guides.techhub.wsagames.com/0_Induction/1_Studio/1_Studio-32</link>
+    <guid>https://guides.techhub.wsagames.com/0_Induction/1_Studio/1_Studio-32</guid>
+    <description>Notice Please be mindful of noise especially if there are classes happening in the studio.</description>
+    <pubDate>Fri, 25 Apr 2025 15:03:13 GMT</pubDate>
   </item><item>
-    <title>Unity - Coding</title>
-    <link>https://tech.wsagames.com/guides/Unity/Coding/</link>
-    <guid>https://tech.wsagames.com/guides/Unity/Coding/</guid>
+    <title>Policy</title>
+    <link>https://guides.techhub.wsagames.com/0_Induction/1_Studio/0_Policy</link>
+    <guid>https://guides.techhub.wsagames.com/0_Induction/1_Studio/0_Policy</guid>
+    <description>Polite Notice A reminder that the upkeep of studios and other university spaces is a joint responsibility between all students (BA Games Design or otherwise) and staff.</description>
+    <pubDate>Fri, 25 Apr 2025 14:59:22 GMT</pubDate>
+  </item><item>
+    <title>Studio</title>
+    <link>https://guides.techhub.wsagames.com/0_Induction/1_Studio/</link>
+    <guid>https://guides.techhub.wsagames.com/0_Induction/1_Studio/</guid>
     <description></description>
-    <pubDate>Tue, 15 Apr 2025 18:41:39 GMT</pubDate>
+    <pubDate>Fri, 25 Apr 2025 14:55:45 GMT</pubDate>
   </item><item>
-    <title>Unity - Simple 2D Player Controller (Top-Down &amp;amp; Platformer)</title>
-    <link>https://tech.wsagames.com/guides/Unity/Introduction/2D/Simple-2D-Player-Controller/</link>
-    <guid>https://tech.wsagames.com/guides/Unity/Introduction/2D/Simple-2D-Player-Controller/</guid>
-    <description>Note: This is a student-submitted guide.</description>
-    <pubDate>Tue, 15 Apr 2025 18:41:39 GMT</pubDate>
-  </item><item>
-    <title>Unity - Sprites and Spritesheet Resources</title>
-    <link>https://tech.wsagames.com/guides/Unity/Introduction/2D/Sprites-and-Spritesheet-Resources/</link>
-    <guid>https://tech.wsagames.com/guides/Unity/Introduction/2D/Sprites-and-Spritesheet-Resources/</guid>
-    <description>Notice This is a temporary page to collate a handful of resources to get started with 2D sprites and 2D animation in Unity.</description>
-    <pubDate>Tue, 15 Apr 2025 18:41:39 GMT</pubDate>
-  </item><item>
-    <title>Unity - 2D</title>
-    <link>https://tech.wsagames.com/guides/Unity/Introduction/2D/</link>
-    <guid>https://tech.wsagames.com/guides/Unity/Introduction/2D/</guid>
+    <title>Core Tech</title>
+    <link>https://guides.techhub.wsagames.com/0_Induction/0_Core-Tech/</link>
+    <guid>https://guides.techhub.wsagames.com/0_Induction/0_Core-Tech/</guid>
     <description></description>
-    <pubDate>Tue, 15 Apr 2025 18:41:39 GMT</pubDate>
+    <pubDate>Fri, 25 Apr 2025 14:55:33 GMT</pubDate>
   </item><item>
-    <title>Unity 3D - Introduction [shp-icon icon=&quot;new&quot;]</title>
-    <link>https://tech.wsagames.com/guides/Unity/Introduction/First-3D-Game/</link>
-    <guid>https://tech.wsagames.com/guides/Unity/Introduction/First-3D-Game/</guid>
-    <description>[icon name=&quot;computer&quot;] Lab Note Test Commit This guide can be followed while using the GDA Computer Suite.</description>
-    <pubDate>Tue, 15 Apr 2025 18:41:39 GMT</pubDate>
+    <title>Induction</title>
+    <link>https://guides.techhub.wsagames.com/0_Induction/</link>
+    <guid>https://guides.techhub.wsagames.com/0_Induction/</guid>
+    <description></description>
+    <pubDate>Fri, 25 Apr 2025 14:54:21 GMT</pubDate>
   </item><item>
-    <title>Unity 3D - First Person Controller [shp-icon icon=&quot;new&quot;]</title>
-    <link>https://tech.wsagames.com/guides/Unity/Introduction/First-Person-Controller/</link>
-    <guid>https://tech.wsagames.com/guides/Unity/Introduction/First-Person-Controller/</guid>
-    <description>[icon name=&quot;computer&quot;] Lab Note This guide can be followed while using the GDA Computer Suite.</description>
-    <pubDate>Tue, 15 Apr 2025 18:41:39 GMT</pubDate>
+    <title>Full Screen Shaders</title>
+    <link>https://guides.techhub.wsagames.com/1_Unity/3_Shaders/0_Full-Screen-Shaders</link>
+    <guid>https://guides.techhub.wsagames.com/1_Unity/3_Shaders/0_Full-Screen-Shaders</guid>
+    <description>Avaliable on Loop This guide has not been ported to tech.wsagames.com yet, but it is available on Microsoft Loop: (Ctrl+Click the link) Full-Screen Filter Shaders.loop.</description>
+    <pubDate>Fri, 25 Apr 2025 14:53:59 GMT</pubDate>
   </item><item>
-    <title>Unity - Glossary</title>
-    <link>https://tech.wsagames.com/guides/Unity/Introduction/Glossary/</link>
-    <guid>https://tech.wsagames.com/guides/Unity/Introduction/Glossary/</guid>
+    <title>Input System Quick Start</title>
+    <link>https://guides.techhub.wsagames.com/1_Unity/0_Introduction/4_Input-System-Quick-Start</link>
+    <guid>https://guides.techhub.wsagames.com/1_Unity/0_Introduction/4_Input-System-Quick-Start</guid>
+    <description>Avaliable on Loop This guide has not been ported to this site yet, but it is available on Microsoft Loop: (Ctrl+Click the link) Input System Quick Start.loop.</description>
+    <pubDate>Fri, 25 Apr 2025 14:36:54 GMT</pubDate>
+  </item><item>
+    <title>Simple 3D Orbit Camera</title>
+    <link>https://guides.techhub.wsagames.com/1_Unity/0_Introduction/3_Simple-Orbit-Camera</link>
+    <guid>https://guides.techhub.wsagames.com/1_Unity/0_Introduction/3_Simple-Orbit-Camera</guid>
     <description>Note: This is a student-submitted guide.</description>
-    <pubDate>Tue, 15 Apr 2025 18:41:39 GMT</pubDate>
+    <pubDate>Fri, 25 Apr 2025 14:32:03 GMT</pubDate>
   </item><item>
-    <title>Unity - Input System Quick Start</title>
-    <link>https://tech.wsagames.com/guides/Unity/Introduction/Input-System-Quick-Start/</link>
-    <guid>https://tech.wsagames.com/guides/Unity/Introduction/Input-System-Quick-Start/</guid>
-    <description>Avaliable on Loop This guide has not been ported to tech.wsagames.com yet, but it is available on Microsoft Loop: Input System Quick Start.loop.</description>
-    <pubDate>Tue, 15 Apr 2025 18:41:39 GMT</pubDate>
+    <title>First Person Controller</title>
+    <link>https://guides.techhub.wsagames.com/1_Unity/0_Introduction/2_First-Person-Controller</link>
+    <guid>https://guides.techhub.wsagames.com/1_Unity/0_Introduction/2_First-Person-Controller</guid>
+    <description>Creating a simple First Person Controller Learning any application is best done through practice! To really solidify the above concepts, lets create a very basic First Person Controller.</description>
+    <pubDate>Fri, 25 Apr 2025 14:31:24 GMT</pubDate>
   </item>
     </channel>
   </rss>

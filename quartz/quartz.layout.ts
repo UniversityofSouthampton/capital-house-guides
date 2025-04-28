@@ -34,13 +34,18 @@ export const defaultContentPageLayout: PageLayout = {
           grow: true,
         },
         { Component: Component.Darkmode() },
+        { Component: Component.ReaderMode() }
       ],
     }),
-    Component.Explorer(),
+    Component.GuidesTree(),
+    Component.Explorer({
+      sortFn: (a, b) => {
+        return a.slugSegment.localeCompare(b.slugSegment)
+      }
+    })
   ],
   right: [
     //Component.Graph(),
-    Component.GuidesTree(),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
   ],
@@ -59,11 +64,18 @@ export const defaultListPageLayout: PageLayout = {
           grow: true,
         },
         { Component: Component.Darkmode() },
+        { Component: Component.ReaderMode() }
       ],
     }),
-    Component.Explorer(),
+    Component.GuidesTree(),
+    Component.Explorer({
+      sortFn: (a, b) => {
+        return a.slugSegment.localeCompare(b.slugSegment)
+      }
+    })
   ],
   right: [
-    Component.GuidesTree()
+    Component.DesktopOnly(Component.TableOfContents()),
+    Component.Backlinks()
   ],
 }

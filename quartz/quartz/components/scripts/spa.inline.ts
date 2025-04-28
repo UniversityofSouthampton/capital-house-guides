@@ -38,6 +38,8 @@ const getOpts = ({ target }: Event): { url: URL; scroll?: boolean } | undefined 
 function notifyNav(url: FullSlug) {
   const event: CustomEventMap["nav"] = new CustomEvent("nav", { detail: { url } })
   document.dispatchEvent(event)
+  let msg = {'func':'guidesPageChange', 'msg':url};
+  window.parent.postMessage(msg,"*")
 }
 
 const cleanupFns: Set<(...args: any[]) => void> = new Set()

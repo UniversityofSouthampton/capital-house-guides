@@ -1,8 +1,0 @@
-{
-	"nodes":[
-		{"id":"ee4df14098b326a0","x":-660,"y":-240,"width":493,"height":93,"color":"#709bff","type":"text","text":"# Welcome!\nWelcome to the new **WSA Capital House** guides repository!"},
-		{"id":"5513967a1a13df8f","x":-660,"y":-112,"width":493,"height":332,"color":"5","type":"text","text":"## What can I find here?\n\nOn this page, you can find guides written by staff and other students which will help you develop your technical skills during your time at the Winchester School of Art! \n\n## Technical Sessions\n\n\n"},
-		{"id":"bd032ad375636957","type":"text","text":"### Who are these guides for?\n\nThe content of this site is focused towards students studying the following courses, but this site is available for all!\n- BA Games Design & Art\n- BSc Creative Computing\n- MSc Creative Technologies","x":-120,"y":-240,"width":500,"height":220}
-	],
-	"edges":[]
-}
