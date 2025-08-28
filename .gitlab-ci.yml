@@ -19,7 +19,7 @@ build:
     - npx quartz build
   artifacts:
     paths:
-      - quartz/public
+      - public
   tags:
     - gitlab-org-docker
  
@@ -31,4 +31,4 @@ pages:
     - echo "Deploying to GitLab Pages..."
   artifacts:
     paths:
-      - quartz/public
+      - public
