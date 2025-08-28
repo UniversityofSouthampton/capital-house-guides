@@ -6,65 +6,65 @@
       <description>Last 10 notes on Guides Repo</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>Steam PC</title>
-    <link>https://guides.techhub.wsagames.com/0_Induction/1_Studio/2_Steam-PC</link>
-    <guid>https://guides.techhub.wsagames.com/0_Induction/1_Studio/2_Steam-PC</guid>
-    <description>Here at GDA we have a dedicated Alienware machine that you can login to at any time to play/test games.</description>
-    <pubDate>Fri, 25 Apr 2025 15:09:25 GMT</pubDate>
+    <title>Optimised Topology</title>
+    <link>https://guides.techhub.wsagames.com/2_Blender/0_Core/4_Optimised-Topology</link>
+    <guid>https://guides.techhub.wsagames.com/2_Blender/0_Core/4_Optimised-Topology</guid>
+    <description>This guide will explain the concept of 3D model topology, why it is important and how to optimise your model for real-time applications such as video games.</description>
+    <pubDate>Thu, 01 May 2025 11:57:10 GMT</pubDate>
   </item><item>
-    <title>Studio 32</title>
-    <link>https://guides.techhub.wsagames.com/0_Induction/1_Studio/1_Studio-32</link>
-    <guid>https://guides.techhub.wsagames.com/0_Induction/1_Studio/1_Studio-32</guid>
-    <description>Notice Please be mindful of noise especially if there are classes happening in the studio.</description>
-    <pubDate>Fri, 25 Apr 2025 15:03:13 GMT</pubDate>
+    <title>Useful Videos</title>
+    <link>https://guides.techhub.wsagames.com/2_Blender/0_Core/3_Useful-Videos</link>
+    <guid>https://guides.techhub.wsagames.com/2_Blender/0_Core/3_Useful-Videos</guid>
+    <description>Comprehensive Complete Beginner’s Guide (YouTube) A complete guide like this will take you through making a simple scene and teach the basics of modelling, texturing and shading, but will not teach techniques specific to making game assets.</description>
+    <pubDate>Wed, 30 Apr 2025 21:06:47 GMT</pubDate>
   </item><item>
-    <title>Policy</title>
-    <link>https://guides.techhub.wsagames.com/0_Induction/1_Studio/0_Policy</link>
-    <guid>https://guides.techhub.wsagames.com/0_Induction/1_Studio/0_Policy</guid>
-    <description>Polite Notice A reminder that the upkeep of studios and other university spaces is a joint responsibility between all students (BA Games Design or otherwise) and staff.</description>
-    <pubDate>Fri, 25 Apr 2025 14:59:22 GMT</pubDate>
+    <title>Exporting to Unity</title>
+    <link>https://guides.techhub.wsagames.com/2_Blender/0_Core/10_Exporting-to-Unity</link>
+    <guid>https://guides.techhub.wsagames.com/2_Blender/0_Core/10_Exporting-to-Unity</guid>
+    <description>In Unity Before you start, it is good practice to make a folder for your model imports if you do not have one already (see Best practices for organizing your Unity project) In Blender Recommended: Join objects into one mesh (select all then Ctrl+J) unless you need it for rigging etc.</description>
+    <pubDate>Wed, 30 Apr 2025 15:55:29 GMT</pubDate>
   </item><item>
-    <title>Studio</title>
-    <link>https://guides.techhub.wsagames.com/0_Induction/1_Studio/</link>
-    <guid>https://guides.techhub.wsagames.com/0_Induction/1_Studio/</guid>
+    <title>Character Creation</title>
+    <link>https://guides.techhub.wsagames.com/2_Blender/1_Character-Creation/</link>
+    <guid>https://guides.techhub.wsagames.com/2_Blender/1_Character-Creation/</guid>
     <description></description>
-    <pubDate>Fri, 25 Apr 2025 14:55:45 GMT</pubDate>
+    <pubDate>Wed, 30 Apr 2025 15:53:54 GMT</pubDate>
   </item><item>
-    <title>Core Tech</title>
-    <link>https://guides.techhub.wsagames.com/0_Induction/0_Core-Tech/</link>
-    <guid>https://guides.techhub.wsagames.com/0_Induction/0_Core-Tech/</guid>
+    <title>Setting Up Blender for Character Creation</title>
+    <link>https://guides.techhub.wsagames.com/2_Blender/1_Character-Creation/1_Setting-Up-Blender</link>
+    <guid>https://guides.techhub.wsagames.com/2_Blender/1_Character-Creation/1_Setting-Up-Blender</guid>
     <description></description>
-    <pubDate>Fri, 25 Apr 2025 14:55:33 GMT</pubDate>
+    <pubDate>Wed, 30 Apr 2025 15:07:32 GMT</pubDate>
   </item><item>
-    <title>Induction</title>
-    <link>https://guides.techhub.wsagames.com/0_Induction/</link>
-    <guid>https://guides.techhub.wsagames.com/0_Induction/</guid>
+    <title>Character Turnarounds</title>
+    <link>https://guides.techhub.wsagames.com/2_Blender/1_Character-Creation/0_Character-Turnarounds</link>
+    <guid>https://guides.techhub.wsagames.com/2_Blender/1_Character-Creation/0_Character-Turnarounds</guid>
+    <description>Reference Images Before a 3D artist can begin, they require a set of reference images for the characters.</description>
+    <pubDate>Wed, 30 Apr 2025 15:04:06 GMT</pubDate>
+  </item><item>
+    <title>Character Creation Resources</title>
+    <link>https://guides.techhub.wsagames.com/2_Blender/1_Character-Creation/2_Character-Creation-Tutorials</link>
+    <guid>https://guides.techhub.wsagames.com/2_Blender/1_Character-Creation/2_Character-Creation-Tutorials</guid>
+    <description>Character Creation (LinkedIn Learning) www.linkedin.com/learning/blender-2-8-character-creation/create-your-own-3d-characters Low-Poly Game Character Creation (YouTube) Thomas Potter’s videos on low-poly characters are a great introduction to creating optimised characters that can be easily rigged f...</description>
+    <pubDate>Wed, 30 Apr 2025 14:57:38 GMT</pubDate>
+  </item><item>
+    <title>Blender Core</title>
+    <link>https://guides.techhub.wsagames.com/2_Blender/0_Core/</link>
+    <guid>https://guides.techhub.wsagames.com/2_Blender/0_Core/</guid>
     <description></description>
-    <pubDate>Fri, 25 Apr 2025 14:54:21 GMT</pubDate>
+    <pubDate>Wed, 30 Apr 2025 14:55:44 GMT</pubDate>
   </item><item>
-    <title>Full Screen Shaders</title>
-    <link>https://guides.techhub.wsagames.com/1_Unity/3_Shaders/0_Full-Screen-Shaders</link>
-    <guid>https://guides.techhub.wsagames.com/1_Unity/3_Shaders/0_Full-Screen-Shaders</guid>
-    <description>Avaliable on Loop This guide has not been ported to tech.wsagames.com yet, but it is available on Microsoft Loop: (Ctrl+Click the link) Full-Screen Filter Shaders.loop.</description>
-    <pubDate>Fri, 25 Apr 2025 14:53:59 GMT</pubDate>
+    <title>Useful Addons</title>
+    <link>https://guides.techhub.wsagames.com/2_Blender/0_Core/2_Useful-Addons</link>
+    <guid>https://guides.techhub.wsagames.com/2_Blender/0_Core/2_Useful-Addons</guid>
+    <description>Addons can be accessed or installed in Edit → Preferences… → Addons.</description>
+    <pubDate>Wed, 30 Apr 2025 14:47:45 GMT</pubDate>
   </item><item>
-    <title>Input System Quick Start</title>
-    <link>https://guides.techhub.wsagames.com/1_Unity/0_Introduction/4_Input-System-Quick-Start</link>
-    <guid>https://guides.techhub.wsagames.com/1_Unity/0_Introduction/4_Input-System-Quick-Start</guid>
-    <description>Avaliable on Loop This guide has not been ported to this site yet, but it is available on Microsoft Loop: (Ctrl+Click the link) Input System Quick Start.loop.</description>
-    <pubDate>Fri, 25 Apr 2025 14:36:54 GMT</pubDate>
-  </item><item>
-    <title>Simple 3D Orbit Camera</title>
-    <link>https://guides.techhub.wsagames.com/1_Unity/0_Introduction/3_Simple-Orbit-Camera</link>
-    <guid>https://guides.techhub.wsagames.com/1_Unity/0_Introduction/3_Simple-Orbit-Camera</guid>
-    <description>Note: This is a student-submitted guide.</description>
-    <pubDate>Fri, 25 Apr 2025 14:32:03 GMT</pubDate>
-  </item><item>
-    <title>First Person Controller</title>
-    <link>https://guides.techhub.wsagames.com/1_Unity/0_Introduction/2_First-Person-Controller</link>
-    <guid>https://guides.techhub.wsagames.com/1_Unity/0_Introduction/2_First-Person-Controller</guid>
-    <description>Creating a simple First Person Controller Learning any application is best done through practice! To really solidify the above concepts, lets create a very basic First Person Controller.</description>
-    <pubDate>Fri, 25 Apr 2025 14:31:24 GMT</pubDate>
+    <title>Keybind List</title>
+    <link>https://guides.techhub.wsagames.com/2_Blender/0_Core/1_Keybind-List</link>
+    <guid>https://guides.techhub.wsagames.com/2_Blender/0_Core/1_Keybind-List</guid>
+    <description>Navigation ActionShortcutOrbitMiddle Mouse ButtonPanShift + MMBZoom In/OutScroll or Ctrl + MMBFlyShift + ~ General ActionShortcutAdd ObjectShift + ADeleteX or DeleteMoveG (for Grab)ScaleSRotateRLock to Axis (when moving, scaling, rotating)X/Y/ZSelectLeft Mouse ButtonSelect/Deselect AllADuplicateShif...</description>
+    <pubDate>Wed, 30 Apr 2025 14:44:27 GMT</pubDate>
   </item>
     </channel>
   </rss>

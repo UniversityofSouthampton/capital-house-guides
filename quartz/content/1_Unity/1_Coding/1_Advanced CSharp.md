@@ -354,3 +354,4 @@ By adding an 'event' modifier to our delegate, only the script which defines the
 While the functionality is the same, this reduces our chance of errors.
 
 _See also: Actions in Unity_, _Unity Events_, and _Scriptable Object Events_.
+
