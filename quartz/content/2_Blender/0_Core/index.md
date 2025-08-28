@@ -1,3 +1,0 @@
----
-title: Blender Core
----
