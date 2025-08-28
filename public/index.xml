@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+      <title>Guides Repo</title>
+      <link>https://guides.techhub.wsagames.com</link>
+      <description>Last 10 notes on Guides Repo</description>
+      <generator>Quartz -- quartz.jzhao.xyz</generator>
+      <item>
+    <title>Optimised Topology</title>
+    <link>https://guides.techhub.wsagames.com/2_Blender/0_Core/4_Optimised-Topology</link>
+    <guid>https://guides.techhub.wsagames.com/2_Blender/0_Core/4_Optimised-Topology</guid>
+    <description>This guide will explain the concept of 3D model topology, why it is important and how to optimise your model for real-time applications such as video games.</description>
+    <pubDate>Thu, 01 May 2025 11:57:10 GMT</pubDate>
+  </item><item>
+    <title>Useful Videos</title>
+    <link>https://guides.techhub.wsagames.com/2_Blender/0_Core/3_Useful-Videos</link>
+    <guid>https://guides.techhub.wsagames.com/2_Blender/0_Core/3_Useful-Videos</guid>
+    <description>Comprehensive Complete Beginner’s Guide (YouTube) A complete guide like this will take you through making a simple scene and teach the basics of modelling, texturing and shading, but will not teach techniques specific to making game assets.</description>
+    <pubDate>Wed, 30 Apr 2025 21:06:47 GMT</pubDate>
+  </item><item>
+    <title>Exporting to Unity</title>
+    <link>https://guides.techhub.wsagames.com/2_Blender/0_Core/10_Exporting-to-Unity</link>
+    <guid>https://guides.techhub.wsagames.com/2_Blender/0_Core/10_Exporting-to-Unity</guid>
+    <description>In Unity Before you start, it is good practice to make a folder for your model imports if you do not have one already (see Best practices for organizing your Unity project) In Blender Recommended: Join objects into one mesh (select all then Ctrl+J) unless you need it for rigging etc.</description>
+    <pubDate>Wed, 30 Apr 2025 15:55:29 GMT</pubDate>
+  </item><item>
+    <title>Character Creation</title>
+    <link>https://guides.techhub.wsagames.com/2_Blender/1_Character-Creation/</link>
+    <guid>https://guides.techhub.wsagames.com/2_Blender/1_Character-Creation/</guid>
+    <description></description>
+    <pubDate>Wed, 30 Apr 2025 15:53:54 GMT</pubDate>
+  </item><item>
+    <title>Setting Up Blender for Character Creation</title>
+    <link>https://guides.techhub.wsagames.com/2_Blender/1_Character-Creation/1_Setting-Up-Blender</link>
+    <guid>https://guides.techhub.wsagames.com/2_Blender/1_Character-Creation/1_Setting-Up-Blender</guid>
+    <description></description>
+    <pubDate>Wed, 30 Apr 2025 15:07:32 GMT</pubDate>
+  </item><item>
+    <title>Character Turnarounds</title>
+    <link>https://guides.techhub.wsagames.com/2_Blender/1_Character-Creation/0_Character-Turnarounds</link>
+    <guid>https://guides.techhub.wsagames.com/2_Blender/1_Character-Creation/0_Character-Turnarounds</guid>
+    <description>Reference Images Before a 3D artist can begin, they require a set of reference images for the characters.</description>
+    <pubDate>Wed, 30 Apr 2025 15:04:06 GMT</pubDate>
+  </item><item>
+    <title>Character Creation Resources</title>
+    <link>https://guides.techhub.wsagames.com/2_Blender/1_Character-Creation/2_Character-Creation-Tutorials</link>
+    <guid>https://guides.techhub.wsagames.com/2_Blender/1_Character-Creation/2_Character-Creation-Tutorials</guid>
+    <description>Character Creation (LinkedIn Learning) www.linkedin.com/learning/blender-2-8-character-creation/create-your-own-3d-characters Low-Poly Game Character Creation (YouTube) Thomas Potter’s videos on low-poly characters are a great introduction to creating optimised characters that can be easily rigged f...</description>
+    <pubDate>Wed, 30 Apr 2025 14:57:38 GMT</pubDate>
+  </item><item>
+    <title>Blender Core</title>
+    <link>https://guides.techhub.wsagames.com/2_Blender/0_Core/</link>
+    <guid>https://guides.techhub.wsagames.com/2_Blender/0_Core/</guid>
+    <description></description>
+    <pubDate>Wed, 30 Apr 2025 14:55:44 GMT</pubDate>
+  </item><item>
+    <title>Useful Addons</title>
+    <link>https://guides.techhub.wsagames.com/2_Blender/0_Core/2_Useful-Addons</link>
+    <guid>https://guides.techhub.wsagames.com/2_Blender/0_Core/2_Useful-Addons</guid>
+    <description>Addons can be accessed or installed in Edit → Preferences… → Addons.</description>
+    <pubDate>Wed, 30 Apr 2025 14:47:45 GMT</pubDate>
+  </item><item>
+    <title>Keybind List</title>
+    <link>https://guides.techhub.wsagames.com/2_Blender/0_Core/1_Keybind-List</link>
+    <guid>https://guides.techhub.wsagames.com/2_Blender/0_Core/1_Keybind-List</guid>
+    <description>Navigation ActionShortcutOrbitMiddle Mouse ButtonPanShift + MMBZoom In/OutScroll or Ctrl + MMBFlyShift + ~ General ActionShortcutAdd ObjectShift + ADeleteX or DeleteMoveG (for Grab)ScaleSRotateRLock to Axis (when moving, scaling, rotating)X/Y/ZSelectLeft Mouse ButtonSelect/Deselect AllADuplicateShif...</description>
+    <pubDate>Wed, 30 Apr 2025 14:44:27 GMT</pubDate>
+  </item>
+    </channel>
+  </rss>
