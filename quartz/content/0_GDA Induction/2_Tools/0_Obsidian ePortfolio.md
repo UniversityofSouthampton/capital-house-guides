@@ -2,6 +2,10 @@
 title: Obsidian ePortfolio
 author: Ross Popovs
 ---
+
+> [!NOTE] First Year Only
+> This guide applies to first year students only.
+
 # Your ePortfolio
 To enable staff to provide feedback on your work and development towards The 7 Proficiencies, you will keep a regularly updated ePortfolio of work to be able to show to staff as you progress. This would be updated once a week as a minimum but likely you will be updating it daily with your reflections and at key point development plans. Staff will want to see this progress and will document feedback into your ePortfolio as text or rich media feedback and advice on how to improve to ensure you are on track. You will have specific moments of direct feedback for development which should also be kept or noted in your ePortfolio, alongside informal staff interactions.
 

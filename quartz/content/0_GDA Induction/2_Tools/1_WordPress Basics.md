@@ -2,6 +2,9 @@
 title: WordPress Basics
 author: Ross Popovs
 ---
+
+> [!NOTE] Second and Third Year Only
+> This guide applies to second and third year students only.
 # What is WordPress?
 WordPress is a free, open-source content management system that allows users to create and manage websites and blogs without needing programming skills. Over 40% of the internet is built on WordPress because it allows anyone to configure a website or blog with hundreds of themes and plugins to choose from.
 
