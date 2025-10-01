@@ -6,65 +6,65 @@
       <description>Last 10 notes on Guides Repo</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>Optimised Topology</title>
-    <link>https://guides.techhub.wsagames.com/2_Blender/0_Core/4_Optimised-Topology</link>
-    <guid>https://guides.techhub.wsagames.com/2_Blender/0_Core/4_Optimised-Topology</guid>
-    <description>This guide will explain the concept of 3D model topology, why it is important and how to optimise your model for real-time applications such as video games.</description>
-    <pubDate>Thu, 01 May 2025 11:57:10 GMT</pubDate>
-  </item><item>
-    <title>Useful Videos</title>
-    <link>https://guides.techhub.wsagames.com/2_Blender/0_Core/3_Useful-Videos</link>
-    <guid>https://guides.techhub.wsagames.com/2_Blender/0_Core/3_Useful-Videos</guid>
-    <description>Comprehensive Complete Beginner’s Guide (YouTube) A complete guide like this will take you through making a simple scene and teach the basics of modelling, texturing and shading, but will not teach techniques specific to making game assets.</description>
-    <pubDate>Wed, 30 Apr 2025 21:06:47 GMT</pubDate>
-  </item><item>
-    <title>Exporting to Unity</title>
-    <link>https://guides.techhub.wsagames.com/2_Blender/0_Core/10_Exporting-to-Unity</link>
-    <guid>https://guides.techhub.wsagames.com/2_Blender/0_Core/10_Exporting-to-Unity</guid>
-    <description>In Unity Before you start, it is good practice to make a folder for your model imports if you do not have one already (see Best practices for organizing your Unity project) In Blender Recommended: Join objects into one mesh (select all then Ctrl+J) unless you need it for rigging etc.</description>
-    <pubDate>Wed, 30 Apr 2025 15:55:29 GMT</pubDate>
-  </item><item>
-    <title>Character Creation</title>
-    <link>https://guides.techhub.wsagames.com/2_Blender/1_Character-Creation/</link>
-    <guid>https://guides.techhub.wsagames.com/2_Blender/1_Character-Creation/</guid>
+    <title>GDA Induction</title>
+    <link>https://guides.techhub.wsagames.com/0_GDA-Induction/</link>
+    <guid>https://guides.techhub.wsagames.com/0_GDA-Induction/</guid>
     <description></description>
-    <pubDate>Wed, 30 Apr 2025 15:53:54 GMT</pubDate>
+    <pubDate>Wed, 01 Oct 2025 17:25:03 GMT</pubDate>
   </item><item>
-    <title>Setting Up Blender for Character Creation</title>
-    <link>https://guides.techhub.wsagames.com/2_Blender/1_Character-Creation/1_Setting-Up-Blender</link>
-    <guid>https://guides.techhub.wsagames.com/2_Blender/1_Character-Creation/1_Setting-Up-Blender</guid>
-    <description></description>
-    <pubDate>Wed, 30 Apr 2025 15:07:32 GMT</pubDate>
+    <title>WordPress Basics</title>
+    <link>https://guides.techhub.wsagames.com/3_Misc/0_WordPress-Basics</link>
+    <guid>https://guides.techhub.wsagames.com/3_Misc/0_WordPress-Basics</guid>
+    <description>What is WordPress? WordPress is a free, open-source content management system that allows users to create and manage websites and blogs without needing programming skills.</description>
+    <pubDate>Wed, 01 Oct 2025 17:12:19 GMT</pubDate>
   </item><item>
-    <title>Character Turnarounds</title>
-    <link>https://guides.techhub.wsagames.com/2_Blender/1_Character-Creation/0_Character-Turnarounds</link>
-    <guid>https://guides.techhub.wsagames.com/2_Blender/1_Character-Creation/0_Character-Turnarounds</guid>
-    <description>Reference Images Before a 3D artist can begin, they require a set of reference images for the characters.</description>
-    <pubDate>Wed, 30 Apr 2025 15:04:06 GMT</pubDate>
+    <title>Policy</title>
+    <link>https://guides.techhub.wsagames.com/0_GDA-Induction/1_Studio/0_Policy</link>
+    <guid>https://guides.techhub.wsagames.com/0_GDA-Induction/1_Studio/0_Policy</guid>
+    <description>Polite Notice A reminder that the upkeep of studios and other university spaces is a joint responsibility between all students (BA Games Design or otherwise) and staff.</description>
+    <pubDate>Mon, 29 Sep 2025 16:29:46 GMT</pubDate>
   </item><item>
-    <title>Character Creation Resources</title>
-    <link>https://guides.techhub.wsagames.com/2_Blender/1_Character-Creation/2_Character-Creation-Tutorials</link>
-    <guid>https://guides.techhub.wsagames.com/2_Blender/1_Character-Creation/2_Character-Creation-Tutorials</guid>
-    <description>Character Creation (LinkedIn Learning) www.linkedin.com/learning/blender-2-8-character-creation/create-your-own-3d-characters Low-Poly Game Character Creation (YouTube) Thomas Potter’s videos on low-poly characters are a great introduction to creating optimised characters that can be easily rigged f...</description>
-    <pubDate>Wed, 30 Apr 2025 14:57:38 GMT</pubDate>
+    <title>Steam PC</title>
+    <link>https://guides.techhub.wsagames.com/0_GDA-Induction/1_Studio/2_Steam-PC</link>
+    <guid>https://guides.techhub.wsagames.com/0_GDA-Induction/1_Studio/2_Steam-PC</guid>
+    <description>Here at GDA we have a dedicated Alienware machine (The Bastion) that you can login to at any time to play/test games.</description>
+    <pubDate>Mon, 29 Sep 2025 16:29:04 GMT</pubDate>
   </item><item>
-    <title>Blender Core</title>
-    <link>https://guides.techhub.wsagames.com/2_Blender/0_Core/</link>
-    <guid>https://guides.techhub.wsagames.com/2_Blender/0_Core/</guid>
-    <description></description>
-    <pubDate>Wed, 30 Apr 2025 14:55:44 GMT</pubDate>
+    <title>Studio 32</title>
+    <link>https://guides.techhub.wsagames.com/0_GDA-Induction/1_Studio/1_Studio-32</link>
+    <guid>https://guides.techhub.wsagames.com/0_GDA-Induction/1_Studio/1_Studio-32</guid>
+    <description>Notice Please be mindful of noise especially if there are classes happening in the studio.</description>
+    <pubDate>Mon, 29 Sep 2025 16:27:50 GMT</pubDate>
   </item><item>
-    <title>Useful Addons</title>
-    <link>https://guides.techhub.wsagames.com/2_Blender/0_Core/2_Useful-Addons</link>
-    <guid>https://guides.techhub.wsagames.com/2_Blender/0_Core/2_Useful-Addons</guid>
-    <description>Addons can be accessed or installed in Edit → Preferences… → Addons.</description>
-    <pubDate>Wed, 30 Apr 2025 14:47:45 GMT</pubDate>
+    <title>Art isn&#039;t in the Tools</title>
+    <link>https://guides.techhub.wsagames.com/0_GDA-Induction/0_The-Tech-Stream/0_Art-isn't-in-the-Tools</link>
+    <guid>https://guides.techhub.wsagames.com/0_GDA-Induction/0_The-Tech-Stream/0_Art-isn't-in-the-Tools</guid>
+    <description>The Dilemma Assuming your end goal is to work in the games industry, or an adjacent creative sector, you may assume that studios and workplaces have rigid hard skill requirements (“you must know how to use this specific games engine, you must know how to use this specific program, you must know the ...</description>
+    <pubDate>Mon, 29 Sep 2025 16:26:18 GMT</pubDate>
   </item><item>
-    <title>Keybind List</title>
-    <link>https://guides.techhub.wsagames.com/2_Blender/0_Core/1_Keybind-List</link>
-    <guid>https://guides.techhub.wsagames.com/2_Blender/0_Core/1_Keybind-List</guid>
-    <description>Navigation ActionShortcutOrbitMiddle Mouse ButtonPanShift + MMBZoom In/OutScroll or Ctrl + MMBFlyShift + ~ General ActionShortcutAdd ObjectShift + ADeleteX or DeleteMoveG (for Grab)ScaleSRotateRLock to Axis (when moving, scaling, rotating)X/Y/ZSelectLeft Mouse ButtonSelect/Deselect AllADuplicateShif...</description>
-    <pubDate>Wed, 30 Apr 2025 14:44:27 GMT</pubDate>
+    <title>What is The Tech Stream</title>
+    <link>https://guides.techhub.wsagames.com/0_GDA-Induction/0_The-Tech-Stream/1_What-is-The-Tech-Stream</link>
+    <guid>https://guides.techhub.wsagames.com/0_GDA-Induction/0_The-Tech-Stream/1_What-is-The-Tech-Stream</guid>
+    <description>I strongly recommend reading Art isn’t in the Tools before this page, as it provides an important preface to understanding the purpose of the tech stream.</description>
+    <pubDate>Mon, 29 Sep 2025 16:12:29 GMT</pubDate>
+  </item><item>
+    <title>Ad-Hoc Technical Support</title>
+    <link>https://guides.techhub.wsagames.com/0_GDA-Induction/0_The-Tech-Stream/4_Ad-hoc-Technical-Support</link>
+    <guid>https://guides.techhub.wsagames.com/0_GDA-Induction/0_The-Tech-Stream/4_Ad-hoc-Technical-Support</guid>
+    <description>Finally, you are free to ask for any technical support or advice from your technician! This can pertain to anything, and does not have to be related to your coursework or university projects: Ross Popovs (Digital Games Technician) In-Person: GDA Computer Suite On Slack By email: R.Popovs@soton.ac.uk...</description>
+    <pubDate>Mon, 29 Sep 2025 16:11:37 GMT</pubDate>
+  </item><item>
+    <title>Technical Guides</title>
+    <link>https://guides.techhub.wsagames.com/0_GDA-Induction/0_The-Tech-Stream/3_Technical-Guides</link>
+    <guid>https://guides.techhub.wsagames.com/0_GDA-Induction/0_The-Tech-Stream/3_Technical-Guides</guid>
+    <description>techhub.wsagames.com/guides These guides can help to lead you through a particular concept, or will provide external resources.</description>
+    <pubDate>Mon, 29 Sep 2025 16:10:48 GMT</pubDate>
+  </item><item>
+    <title>Technical Sessions</title>
+    <link>https://guides.techhub.wsagames.com/0_GDA-Induction/0_The-Tech-Stream/2_Technical-Sessions</link>
+    <guid>https://guides.techhub.wsagames.com/0_GDA-Induction/0_The-Tech-Stream/2_Technical-Sessions</guid>
+    <description>Each week, you will have what is broadly called a “Technical Session”. A three hour slot especially dedicated to technical learning and practice.</description>
+    <pubDate>Mon, 29 Sep 2025 16:06:46 GMT</pubDate>
   </item>
     </channel>
   </rss>
