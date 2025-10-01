@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0_GDA Induction/2_WordPress/index.md",
+                "file": "0_GDA Induction/2_Tools/0_Obsidian ePortfolio.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "0_Obsidian ePortfolio"
             }
           }
         ]
@@ -171,21 +171,26 @@
   },
   "active": "fdb4d1700dac781e",
   "lastOpenFiles": [
-    "0_GDA Induction/2_WordPress/0_WordPress Basics.md",
-    "0_GDA Induction/2_WordPress/index.md",
+    "0_GDA Induction/2_Tools/attachments/Pasted image 20251001215837.png",
+    "0_GDA Induction/2_Tools/attachments/Pasted image 20251001214931.png",
+    "0_GDA Induction/2_Tools/attachments/Pasted image 20251001214458.png",
+    "0_GDA Induction/2_Tools/attachments/Pasted image 20251001214221.png",
+    "0_GDA Induction/2_Tools/attachments/Pasted image 20251001213647.png",
+    "0_GDA Induction/2_Tools/attachments/Pasted image 20251001213522.png",
+    "0_GDA Induction/2_Tools/attachments/Pasted image 20251001213410.png",
+    "0_GDA Induction/2_Tools/attachments/Pasted image 20251001212450.png",
+    "0_GDA Induction/2_Tools/0_Obsidian ePortfolio.md",
+    "0_GDA Induction/2_Tools/attachments/Pasted image 20251001212946.png",
+    "0_GDA Induction/2_Tools/attachments/Pasted image 20251001212222.png",
+    "0_GDA Induction/2_Tools/attachments/Pasted image 20251001211854.png",
+    "0_GDA Induction/2_Tools/1_WordPress Basics.md",
+    "0_GDA Induction/2_Tools/index.md",
+    "0_GDA Induction/index.md",
+    "0_GDA Induction/2_Tools/attachments",
+    "0_GDA Induction/2_Tools",
     "2_Blender/index.md",
     "0_GDA Induction/1_Studio/2_Steam PC.md",
     "index.md",
-    "2_Blender/attachments/Untitled.png",
-    "2_Blender/attachments/Untitled 9.png",
-    "2_Blender/attachments/Untitled 8.png",
-    "2_Blender/attachments/Untitled 7.png",
-    "2_Blender/attachments/Untitled 6.png",
-    "2_Blender/attachments/Untitled 5.png",
-    "2_Blender/attachments/Untitled 4.png",
-    "2_Blender/attachments/Untitled 3.png",
-    "2_Blender/attachments/Untitled 2.png",
-    "2_Blender/attachments/Logo_Blender.svg.png",
     "2_Blender/attachments",
     "1_Unity/3_Shaders/index.md",
     "1_Unity/3_Shaders/0_Full-Screen Shaders.md",
@@ -210,13 +215,8 @@
     "2_Blender",
     "1_Unity/2_2D/index.md",
     "1_Unity/2_2D/1_Simple 2D Player Controller.md",
-    "1_Unity/2_2D/images",
     "1_Unity/2_2D/0_Sprites and Spritesheet Resources.md",
-    "1_Unity/2_2D",
     "1_Unity/1_Coding/index.md",
-    "1_Unity/1_Coding/1_Advanced CSharp.md",
-    "1_Unity/1_Coding/0_CSharp Resources.md",
-    "1_Unity/0_Introduction/4_Input System Quick-Start.md",
     "Main Page.canvas"
   ]
 }
