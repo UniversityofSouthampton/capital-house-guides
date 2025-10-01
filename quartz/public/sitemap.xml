@@ -1,4 +1,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url>
+    <loc>https://guides.techhub.wsagames.com/</loc>
+    <lastmod>2025-10-01T17:35:20.000Z</lastmod>
+  </url><url>
+    <loc>https://guides.techhub.wsagames.com/0_GDA-Induction/</loc>
+    <lastmod>2025-10-01T17:36:33.000Z</lastmod>
+  </url><url>
+    <loc>https://guides.techhub.wsagames.com/1_Unity/</loc>
+    <lastmod>2025-04-28T10:48:16.000Z</lastmod>
+  </url><url>
+    <loc>https://guides.techhub.wsagames.com/2_Blender/</loc>
+    <lastmod>2025-08-28T15:03:31.000Z</lastmod>
+  </url><url>
     <loc>https://guides.techhub.wsagames.com/0_GDA-Induction/0_The-Tech-Stream/0_Art-isn't-in-the-Tools</loc>
     <lastmod>2025-10-01T17:36:33.000Z</lastmod>
   </url><url>
@@ -17,6 +29,15 @@
     <loc>https://guides.techhub.wsagames.com/0_GDA-Induction/0_The-Tech-Stream/</loc>
     <lastmod>2025-10-01T17:36:33.000Z</lastmod>
   </url><url>
+    <loc>https://guides.techhub.wsagames.com/0_GDA-Induction/2_Tools/0_Obsidian-ePortfolio</loc>
+    <lastmod>2025-10-01T21:11:07.000Z</lastmod>
+  </url><url>
+    <loc>https://guides.techhub.wsagames.com/0_GDA-Induction/2_Tools/1_WordPress-Basics</loc>
+    <lastmod>2025-10-01T21:11:07.000Z</lastmod>
+  </url><url>
+    <loc>https://guides.techhub.wsagames.com/0_GDA-Induction/2_Tools/</loc>
+    <lastmod>2025-10-01T21:11:07.000Z</lastmod>
+  </url><url>
     <loc>https://guides.techhub.wsagames.com/0_GDA-Induction/1_Studio/0_Policy</loc>
     <lastmod>2025-10-01T17:36:33.000Z</lastmod>
   </url><url>
@@ -27,15 +48,6 @@
     <lastmod>2025-10-01T17:36:33.000Z</lastmod>
   </url><url>
     <loc>https://guides.techhub.wsagames.com/0_GDA-Induction/1_Studio/</loc>
-    <lastmod>2025-10-01T17:36:33.000Z</lastmod>
-  </url><url>
-    <loc>https://guides.techhub.wsagames.com/0_GDA-Induction/2_WordPress/0_WordPress-Basics</loc>
-    <lastmod>2025-10-01T17:57:05.000Z</lastmod>
-  </url><url>
-    <loc>https://guides.techhub.wsagames.com/0_GDA-Induction/2_WordPress/</loc>
-    <lastmod>2025-10-01T17:57:05.000Z</lastmod>
-  </url><url>
-    <loc>https://guides.techhub.wsagames.com/0_GDA-Induction/</loc>
     <lastmod>2025-10-01T17:36:33.000Z</lastmod>
   </url><url>
     <loc>https://guides.techhub.wsagames.com/1_Unity/0_Introduction/0_Your-First-Project</loc>
@@ -56,15 +68,6 @@
     <loc>https://guides.techhub.wsagames.com/1_Unity/0_Introduction/</loc>
     <lastmod>2025-04-28T10:48:16.000Z</lastmod>
   </url><url>
-    <loc>https://guides.techhub.wsagames.com/1_Unity/1_Coding/0_CSharp-Resources</loc>
-    <lastmod>2025-04-28T10:48:16.000Z</lastmod>
-  </url><url>
-    <loc>https://guides.techhub.wsagames.com/1_Unity/1_Coding/1_Advanced-CSharp</loc>
-    <lastmod>2025-08-28T15:03:31.000Z</lastmod>
-  </url><url>
-    <loc>https://guides.techhub.wsagames.com/1_Unity/1_Coding/</loc>
-    <lastmod>2025-04-28T10:48:16.000Z</lastmod>
-  </url><url>
     <loc>https://guides.techhub.wsagames.com/1_Unity/2_2D/0_Sprites-and-Spritesheet-Resources</loc>
     <lastmod>2025-04-28T10:48:16.000Z</lastmod>
   </url><url>
@@ -74,13 +77,19 @@
     <loc>https://guides.techhub.wsagames.com/1_Unity/2_2D/</loc>
     <lastmod>2025-04-28T10:48:16.000Z</lastmod>
   </url><url>
+    <loc>https://guides.techhub.wsagames.com/1_Unity/1_Coding/0_CSharp-Resources</loc>
+    <lastmod>2025-04-28T10:48:16.000Z</lastmod>
+  </url><url>
+    <loc>https://guides.techhub.wsagames.com/1_Unity/1_Coding/1_Advanced-CSharp</loc>
+    <lastmod>2025-08-28T15:03:31.000Z</lastmod>
+  </url><url>
+    <loc>https://guides.techhub.wsagames.com/1_Unity/1_Coding/</loc>
+    <lastmod>2025-04-28T10:48:16.000Z</lastmod>
+  </url><url>
     <loc>https://guides.techhub.wsagames.com/1_Unity/3_Shaders/0_Full-Screen-Shaders</loc>
     <lastmod>2025-04-28T10:48:16.000Z</lastmod>
   </url><url>
     <loc>https://guides.techhub.wsagames.com/1_Unity/3_Shaders/</loc>
-    <lastmod>2025-04-28T10:48:16.000Z</lastmod>
-  </url><url>
-    <loc>https://guides.techhub.wsagames.com/1_Unity/</loc>
     <lastmod>2025-04-28T10:48:16.000Z</lastmod>
   </url><url>
     <loc>https://guides.techhub.wsagames.com/2_Blender/0_Core/0_Glossary</loc>
@@ -101,6 +110,9 @@
     <loc>https://guides.techhub.wsagames.com/2_Blender/0_Core/4_Optimised-Topology</loc>
     <lastmod>2025-08-28T15:03:31.000Z</lastmod>
   </url><url>
+    <loc>https://guides.techhub.wsagames.com/2_Blender/0_Core/5_Optimised-Topology-(draft)</loc>
+    <lastmod>2025-08-28T15:03:31.000Z</lastmod>
+  </url><url>
     <loc>https://guides.techhub.wsagames.com/2_Blender/0_Core/</loc>
     <lastmod>2025-08-28T15:03:31.000Z</lastmod>
   </url><url>
@@ -115,10 +127,4 @@
   </url><url>
     <loc>https://guides.techhub.wsagames.com/2_Blender/1_Character-Creation/</loc>
     <lastmod>2025-08-28T15:03:31.000Z</lastmod>
-  </url><url>
-    <loc>https://guides.techhub.wsagames.com/2_Blender/</loc>
-    <lastmod>2025-08-28T15:03:31.000Z</lastmod>
-  </url><url>
-    <loc>https://guides.techhub.wsagames.com/</loc>
-    <lastmod>2025-10-01T17:35:20.000Z</lastmod>
   </url></urlset>

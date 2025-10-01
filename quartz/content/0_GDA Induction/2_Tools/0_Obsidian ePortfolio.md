@@ -26,17 +26,23 @@ This is a practice called Version Control, widely used in industry and will be c
 
 *Middle-click any links to open them in a new tab*
 
+---
+
 1. Before continuing, make sure that you have downloaded and installed the following software:
 	- [Obsidian](https://obsidian.md/download)
 	- [Github Desktop](https://desktop.github.com/download/)
+
+---
 
 2. Head to https://git.soton.ac.uk/gamesdesignart
 	- Login (top left corner of the page)
 	- Login using your university username and password
 	- You will now be able to request to join the GDA group on GitLab
 
+---
 3. Head to https://git.soton.ac.uk/gamesdesignart/portfolio-template
 
+--- 
 4. Click "Fork", you should now see this screen
    ![[Pasted image 20251001205909.png]]
 	- Set the project name to `(your username)-portfolio` (eg. rp1y23-portfolio)
@@ -48,14 +54,20 @@ This is a practice called Version Control, widely used in industry and will be c
 	What did we just do? "Forking" a git project creates your own identical copy that you can add changes to without overwriting the original. You have just created a copy of the template portfolio and renamed it. Unlike the template, this copy is private - meaning that unless you explicitly grant access to others, only you and staff can see that it exists or view its contents.
 	You only need to do this forking process once!
 
-5. ![[Pasted image 20251001210156.png]]
-	- You should now see this screen - this is your own personal portfolio (currently a carbon copy of the template)
+---
+
+5. You should now see this screen - this is your own personal portfolio (currently a carbon copy of the template)
+	![[Pasted image 20251001210156.png]]
 	- You can not edit your portfolio directly on GitLab, instead what we need to do is "clone" your portfolio onto your computer. (In git, "cloning" can be thought as downloading the files)
 	- Open up the "Code" dropdown and copy the URL from the "Clone with HTTPS" field
+
+---
 
 6. Now open up the GitHub Desktop app. GitHub Desktop is a free program that allows you to easily "clone" *(download)* git projects onto your computer and manage it. Despite it's name, GitHub Desktop also works with GitLab.
 	- You may be asked to sign in to GitHub, skip this stage.
 	- When asked to set a signature, set it to your university email address.
+
+---
 
 7. Once you have opened GitHub Desktop, on the program navigate to "File" then "Clone Repository" to open up this screen:
 	![[Pasted image 20251001211901.png]]
@@ -66,15 +78,21 @@ This is a practice called Version Control, widely used in industry and will be c
 		- Otherwise, select your ordinary "Documents" folder, or somewhere where you will be able to find the files later and would not accidently delete them
 	- Click "Clone"
 
+---
+
 8. You will likely see this pop-up show up, do not worry - you haven't done anything wrong!
 	![[Pasted image 20251001212222.png]]
 	- As you set your portfolio to "Private", GitLab will not allow any software to access your files without authentication.
 	- Enter your university username and password and click "Ok".
 	- Wait for the cloning to complete
 
+---
+
 9. If you see this, you have done everything correctly up to this point!
 	![[Pasted image 20251001212450.png]]
 	You have successfully cloned your portfolio onto the computer. We can now open the portfolio in Obsidian and start editing!
+
+---
 
 10. Open the Obsidian program. You should see this window:
 	![[Pasted image 20251001212946.png]]
@@ -87,14 +105,20 @@ This is a practice called Version Control, widely used in industry and will be c
 	- Congratulations - you now have your own personal portfolio that you can edit:
 		![[Pasted image 20251001213647.png]]
 
+---
+
 11. Remember that the whole point of using git and GitHub Desktop is that you can save your changes at any point. Lets try this out! As an example, navigate to `Portfolio - Semester One/Week 1/Games Design & Culture - P1`, and make some changes at the bottom!
 	![[Pasted image 20251001214221.png]]
 	You changes should (hopefully) be more insightful than this.
+
+---
 
 12. Open GitHub Desktop again, you will see a list of all the changes that you made!
 	![[Pasted image 20251001214458.png]]
 	- You will see a list of ALL the changes to files on the left - there may be more than you expect! Git tracks all of the files in the folder, even ones that you may not see! Sometimes a program can change a number of files in the background, this is ok.
 	- Importantly, note the change to the file that we specifically made - you can see the lines that we added in green!
+
+---
 
 13. In the bottom left, write a short summary of the changes that you've made (if you want to explain your changes in more detail, you can also provide a description)
     ![[Pasted image 20251001214931.png]]
@@ -107,7 +131,10 @@ This is a practice called Version Control, widely used in industry and will be c
 > 
 > This is why it is important to create commits regularly!
 
+---
+
 14. Final Step! Creating a commit on GitHub Desktop only creates the commit on your machine. If you want the commit to be seen by staff, you will need to "Push" any commits that you have made. You can think of "pushing" as "uploading" your commits back to GitLab.
+
 	![[Pasted image 20251001215837.png]]
 	- To do this, simply click on the "Push origin" button on the top of GitHub Desktop.
 	- You may need to provide your university username and password.

@@ -6,17 +6,29 @@
       <description>Last 10 notes on Guides Repo</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>WordPress Basics</title>
-    <link>https://guides.techhub.wsagames.com/0_GDA-Induction/2_WordPress/0_WordPress-Basics</link>
-    <guid>https://guides.techhub.wsagames.com/0_GDA-Induction/2_WordPress/0_WordPress-Basics</guid>
-    <description>What is WordPress? WordPress is a free, open-source content management system that allows users to create and manage websites and blogs without needing programming skills.</description>
-    <pubDate>Wed, 01 Oct 2025 17:57:05 GMT</pubDate>
+    <title>Obsidian ePortfolio</title>
+    <link>https://guides.techhub.wsagames.com/0_GDA-Induction/2_Tools/0_Obsidian-ePortfolio</link>
+    <guid>https://guides.techhub.wsagames.com/0_GDA-Induction/2_Tools/0_Obsidian-ePortfolio</guid>
+    <description>Your ePortfolio To enable staff to provide feedback on your work and development towards The 7 Proficiencies, you will keep a regularly updated ePortfolio of work to be able to show to staff as you progress.</description>
+    <pubDate>Wed, 01 Oct 2025 21:11:07 GMT</pubDate>
   </item><item>
-    <title>WordPress</title>
-    <link>https://guides.techhub.wsagames.com/0_GDA-Induction/2_WordPress/</link>
-    <guid>https://guides.techhub.wsagames.com/0_GDA-Induction/2_WordPress/</guid>
+    <title>WordPress Basics</title>
+    <link>https://guides.techhub.wsagames.com/0_GDA-Induction/2_Tools/1_WordPress-Basics</link>
+    <guid>https://guides.techhub.wsagames.com/0_GDA-Induction/2_Tools/1_WordPress-Basics</guid>
+    <description>What is WordPress? WordPress is a free, open-source content management system that allows users to create and manage websites and blogs without needing programming skills.</description>
+    <pubDate>Wed, 01 Oct 2025 21:11:07 GMT</pubDate>
+  </item><item>
+    <title>Tools</title>
+    <link>https://guides.techhub.wsagames.com/0_GDA-Induction/2_Tools/</link>
+    <guid>https://guides.techhub.wsagames.com/0_GDA-Induction/2_Tools/</guid>
     <description></description>
-    <pubDate>Wed, 01 Oct 2025 17:57:05 GMT</pubDate>
+    <pubDate>Wed, 01 Oct 2025 21:11:07 GMT</pubDate>
+  </item><item>
+    <title>GDA Induction</title>
+    <link>https://guides.techhub.wsagames.com/0_GDA-Induction/</link>
+    <guid>https://guides.techhub.wsagames.com/0_GDA-Induction/</guid>
+    <description></description>
+    <pubDate>Wed, 01 Oct 2025 17:36:33 GMT</pubDate>
   </item><item>
     <title>Art isn&#039;t in the Tools</title>
     <link>https://guides.techhub.wsagames.com/0_GDA-Induction/0_The-Tech-Stream/0_Art-isn't-in-the-Tools</link>
@@ -52,18 +64,6 @@
     <link>https://guides.techhub.wsagames.com/0_GDA-Induction/0_The-Tech-Stream/</link>
     <guid>https://guides.techhub.wsagames.com/0_GDA-Induction/0_The-Tech-Stream/</guid>
     <description></description>
-    <pubDate>Wed, 01 Oct 2025 17:36:33 GMT</pubDate>
-  </item><item>
-    <title>Policy</title>
-    <link>https://guides.techhub.wsagames.com/0_GDA-Induction/1_Studio/0_Policy</link>
-    <guid>https://guides.techhub.wsagames.com/0_GDA-Induction/1_Studio/0_Policy</guid>
-    <description>Polite Notice A reminder that the upkeep of studios and other university spaces is a joint responsibility between all students (BA Games Design or otherwise) and staff.</description>
-    <pubDate>Wed, 01 Oct 2025 17:36:33 GMT</pubDate>
-  </item><item>
-    <title>Studio 32</title>
-    <link>https://guides.techhub.wsagames.com/0_GDA-Induction/1_Studio/1_Studio-32</link>
-    <guid>https://guides.techhub.wsagames.com/0_GDA-Induction/1_Studio/1_Studio-32</guid>
-    <description>Notice Please be mindful of noise especially if there are classes happening in the studio.</description>
     <pubDate>Wed, 01 Oct 2025 17:36:33 GMT</pubDate>
   </item>
     </channel>
