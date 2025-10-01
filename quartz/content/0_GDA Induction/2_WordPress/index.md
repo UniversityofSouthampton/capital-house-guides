@@ -1,4 +1,4 @@
 ---
-title: Misc
+title: WordPress
 author: Ross Popovs
 ---

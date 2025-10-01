@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2_Blender/index 1.md",
+                "file": "3_Misc/0_WordPress Basics.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index 1"
+              "title": "0_WordPress Basics"
             }
           }
         ]
@@ -171,8 +171,8 @@
   },
   "active": "d9d4b0eb0b84bf78",
   "lastOpenFiles": [
+    "3_Misc/index.md",
     "2_Blender/index.md",
-    "2_Blender/index 1.md",
     "0_GDA Induction/1_Studio/2_Steam PC.md",
     "index.md",
     "2_Blender/attachments/Untitled.png",

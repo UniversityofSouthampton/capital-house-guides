@@ -6,11 +6,17 @@
       <description>Last 10 notes on Guides Repo</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>Misc</title>
-    <link>https://guides.techhub.wsagames.com/3_Misc/</link>
-    <guid>https://guides.techhub.wsagames.com/3_Misc/</guid>
+    <title>WordPress</title>
+    <link>https://guides.techhub.wsagames.com/0_GDA-Induction/2_WordPress/</link>
+    <guid>https://guides.techhub.wsagames.com/0_GDA-Induction/2_WordPress/</guid>
     <description></description>
-    <pubDate>Wed, 01 Oct 2025 17:40:14 GMT</pubDate>
+    <pubDate>Wed, 01 Oct 2025 17:43:27 GMT</pubDate>
+  </item><item>
+    <title>WordPress Basics</title>
+    <link>https://guides.techhub.wsagames.com/0_GDA-Induction/2_WordPress/0_WordPress-Basics</link>
+    <guid>https://guides.techhub.wsagames.com/0_GDA-Induction/2_WordPress/0_WordPress-Basics</guid>
+    <description>What is WordPress? WordPress is a free, open-source content management system that allows users to create and manage websites and blogs without needing programming skills.</description>
+    <pubDate>Wed, 01 Oct 2025 17:36:57 GMT</pubDate>
   </item><item>
     <title>Art isn&#039;t in the Tools</title>
     <link>https://guides.techhub.wsagames.com/0_GDA-Induction/0_The-Tech-Stream/0_Art-isn't-in-the-Tools</link>
@@ -58,12 +64,6 @@
     <link>https://guides.techhub.wsagames.com/0_GDA-Induction/1_Studio/1_Studio-32</link>
     <guid>https://guides.techhub.wsagames.com/0_GDA-Induction/1_Studio/1_Studio-32</guid>
     <description>Notice Please be mindful of noise especially if there are classes happening in the studio.</description>
-    <pubDate>Wed, 01 Oct 2025 17:36:33 GMT</pubDate>
-  </item><item>
-    <title>Steam PC</title>
-    <link>https://guides.techhub.wsagames.com/0_GDA-Induction/1_Studio/2_Steam-PC</link>
-    <guid>https://guides.techhub.wsagames.com/0_GDA-Induction/1_Studio/2_Steam-PC</guid>
-    <description>Here at GDA we have a dedicated Alienware machine (The Bastion) that you can login to at any time to play/test games.</description>
     <pubDate>Wed, 01 Oct 2025 17:36:33 GMT</pubDate>
   </item>
     </channel>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en"><head><title>WordPress Basics</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Guides Repo"/><meta property="og:title" content="WordPress Basics"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="WordPress Basics"/><meta name="twitter:description" content="What is WordPress? WordPress is a free, open-source content management system that allows users to create and manage websites and blogs without needing programming skills."/><meta property="og:description" content="What is WordPress? WordPress is a free, open-source content management system that allows users to create and manage websites and blogs without needing programming skills."/><meta property="og:image:alt" content="What is WordPress? WordPress is a free, open-source content management system that allows users to create and manage websites and blogs without needing programming skills."/><meta property="twitter:domain" content="guides.techhub.wsagames.com"/><meta property="og:url" content="https://guides.techhub.wsagames.com/0_GDA-Induction/2_WordPress/0_WordPress-Basics"/><meta property="twitter:url" content="https://guides.techhub.wsagames.com/0_GDA-Induction/2_WordPress/0_WordPress-Basics"/><link rel="icon" href="../../static/icon.png"/><meta name="description" content="What is WordPress? WordPress is a free, open-source content management system that allows users to create and manage websites and blogs without needing programming skills."/><meta name="generator" content="Quartz"/><link href="../../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiQzpcXExvY2FsXFx0ZWNoLWd1aWRlcy12YXVsdFxccXVhcnR6XFxxdWFydHpcXGNvbXBvbmVudHNcXHN0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://guides.techhub.wsagames.com/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://guides.techhub.wsagames.com/0_GDA-Induction/2_WordPress/0_WordPress-Basics-og-image.webp"/><meta property="og:image:url" content="https://guides.techhub.wsagames.com/0_GDA-Induction/2_WordPress/0_WordPress-Basics-og-image.webp"/><meta name="twitter:image" content="https://guides.techhub.wsagames.com/0_GDA-Induction/2_WordPress/0_WordPress-Basics-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="0_GDA-Induction/2_WordPress/0_WordPress-Basics"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../..">Guides Repo</a></h2><div class="spacer mobile-only"></div><div style="display: flex; flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><p>Search</p><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" class="readerIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="4" width="12" height="16" rx="1"></rect><line x1="9" y1="8" x2="15" y2="8"></line><line x1="9" y1="12" x2="15" y2="12"></line><line x1="9" y1="16" x2="13" y2="16"></line></svg></button></div></div><div id="guidetree-component"><div id="guidetree-container"><iframe id="guidetree-iframe" src="https://guides.techhub.wsagames.com/tree?data=Y3VycmVudD0wX0dEQSBJbmR1Y3Rpb24vMl9Xb3JkUHJlc3MvMF9Xb3JkUHJlc3MgQmFzaWNzJmFsbD0wX0dEQSBJbmR1Y3Rpb24vMF9UaGUgVGVjaCBTdHJlYW0vMF9BcnQgaXNuJ3QgaW4gdGhlIFRvb2xzOzBfR0RBIEluZHVjdGlvbi8wX1RoZSBUZWNoIFN0cmVhbS8xX1doYXQgaXMgVGhlIFRlY2ggU3RyZWFtOzBfR0RBIEluZHVjdGlvbi8wX1RoZSBUZWNoIFN0cmVhbS8yX1RlY2huaWNhbCBTZXNzaW9uczswX0dEQSBJbmR1Y3Rpb24vMF9UaGUgVGVjaCBTdHJlYW0vM19UZWNobmljYWwgR3VpZGVzOzBfR0RBIEluZHVjdGlvbi8wX1RoZSBUZWNoIFN0cmVhbS80X0FkIGhvYyBUZWNobmljYWwgU3VwcG9ydDswX0dEQSBJbmR1Y3Rpb24vMF9UaGUgVGVjaCBTdHJlYW07MF9HREEgSW5kdWN0aW9uLzFfU3R1ZGlvLzBfUG9saWN5OzBfR0RBIEluZHVjdGlvbi8xX1N0dWRpby8xX1N0dWRpbyAzMjswX0dEQSBJbmR1Y3Rpb24vMV9TdHVkaW8vMl9TdGVhbSBQQzswX0dEQSBJbmR1Y3Rpb24vMV9TdHVkaW87MF9HREEgSW5kdWN0aW9uLzJfV29yZFByZXNzLzBfV29yZFByZXNzIEJhc2ljczswX0dEQSBJbmR1Y3Rpb24vMl9Xb3JkUHJlc3M7MF9HREEgSW5kdWN0aW9uOzFfVW5pdHkvMF9JbnRyb2R1Y3Rpb24vMF9Zb3VyIEZpcnN0IFByb2plY3Q7MV9Vbml0eS8wX0ludHJvZHVjdGlvbi8xX0dsb3NzYXJ5OzFfVW5pdHkvMF9JbnRyb2R1Y3Rpb24vMl9GaXJzdCBQZXJzb24gQ29udHJvbGxlcjsxX1VuaXR5LzBfSW50cm9kdWN0aW9uLzNfU2ltcGxlIE9yYml0IENhbWVyYTsxX1VuaXR5LzBfSW50cm9kdWN0aW9uLzRfSW5wdXQgU3lzdGVtIFF1aWNrIFN0YXJ0OzFfVW5pdHkvMF9JbnRyb2R1Y3Rpb247MV9Vbml0eS8xX0NvZGluZy8wX0NTaGFycCBSZXNvdXJjZXM7MV9Vbml0eS8xX0NvZGluZy8xX0FkdmFuY2VkIENTaGFycDsxX1VuaXR5LzFfQ29kaW5nOzFfVW5pdHkvMl8yRC8wX1Nwcml0ZXMgYW5kIFNwcml0ZXNoZWV0IFJlc291cmNlczsxX1VuaXR5LzJfMkQvMV9TaW1wbGUgMkQgUGxheWVyIENvbnRyb2xsZXI7MV9Vbml0eS8yXzJEOzFfVW5pdHkvM19TaGFkZXJzLzBfRnVsbCBTY3JlZW4gU2hhZGVyczsxX1VuaXR5LzNfU2hhZGVyczsxX1VuaXR5OzJfQmxlbmRlci8wX0NvcmUvMF9HbG9zc2FyeTsyX0JsZW5kZXIvMF9Db3JlLzEwX0V4cG9ydGluZyB0byBVbml0eTsyX0JsZW5kZXIvMF9Db3JlLzFfS2V5YmluZCBMaXN0OzJfQmxlbmRlci8wX0NvcmUvMl9Vc2VmdWwgQWRkb25zOzJfQmxlbmRlci8wX0NvcmUvM19Vc2VmdWwgVmlkZW9zOzJfQmxlbmRlci8wX0NvcmUvNF9PcHRpbWlzZWQgVG9wb2xvZ3k7Ml9CbGVuZGVyLzBfQ29yZTsyX0JsZW5kZXIvMV9DaGFyYWN0ZXIgQ3JlYXRpb24vMF9DaGFyYWN0ZXIgVHVybmFyb3VuZHM7Ml9CbGVuZGVyLzFfQ2hhcmFjdGVyIENyZWF0aW9uLzFfU2V0dGluZyBVcCBCbGVuZGVyOzJfQmxlbmRlci8xX0NoYXJhY3RlciBDcmVhdGlvbi8yX0NoYXJhY3RlciBDcmVhdGlvbiBUdXRvcmlhbHM7Ml9CbGVuZGVyLzFfQ2hhcmFjdGVyIENyZWF0aW9uOzJfQmxlbmRlcjs7Ig=="></iframe><div id="guidetree-expand"><svg width="30px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 10V5L8 5M3 14V19L8 19M16 5H21V10M21 14V19H16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>a.slugSegment.localeCompare(b.slugSegment)&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-content"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div class="explorer-content" aria-expanded="false"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../0_GDA-Induction/">GDA Induction</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../0_GDA-Induction/2_WordPress/">WordPress</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>WordPress Basics</a></div></nav><h1 class="article-title">WordPress Basics</h1><p show-comma="true" class="content-meta"><span>Written by Ross Popovs</span><time datetime="2025-10-01T17:36:57.056Z">01 Oct 2025</time><span>5 min read</span></p></div></div><article class="popover-hint"><h1 id="what-is-wordpress">What is WordPress?<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#what-is-wordpress" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p>WordPress is a free, open-source content management system that allows users to create and manage websites and blogs without needing programming skills. Over 40% of the internet is built on WordPress because it allows anyone to configure a website or blog with hundreds of themes and plugins to choose from.</p>
+<p>We at GDA have chosen to use WordPress as the platform of choice for student blogs and portfolios. All second year students are provided with their own personal wordpress site that they should use to document their work throughout the year through a series of organized weekly blog posts. In third year, students have a choice between continuing with their existing site, or starting a new one specifically for third year content. Students may request a new site at any moment, for example for group projects.</p>
+<hr/>
+<h1 id="wordpress-at-gda">WordPress at GDA<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#wordpress-at-gda" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="siteswsagamescom">sites.wsagames.com<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#siteswsagamescom" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><a href="https://sites.wsagames.com/" class="external">https://sites.wsagames.com/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> exists as both a host and an index for student sites. Your site will be hosted on this domain and is usually accessible by appending your username to the end of the URL. For example if your username is <code>ab15g23</code>, your site will be live on <a href="https://sites.wsagames.com/ab15g23/" class="external">https://sites.wsagames.com/ab15g23/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+<h2 id="third-year-projects">Third Year Projects<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#third-year-projects" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Students may request a new site at any moment, for example for group projects.
+The only exception to this rule applies to Final Year Projects, where your site will be hosted separately under a unique domain (you can find examples of Final Year Project websites here: <a href="https://wsagames.com/" class="external">https://wsagames.com/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>). You will be walked through the process of purchasing and setting up your own domain as part of your Third Year marketing lectures.</p>
+<hr/>
+<h1 id="setting-up-your-wordpress-site">Setting up your WordPress site<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#setting-up-your-wordpress-site" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p>You would have been provided a WordPress username and password over email, please check with your technician if you are unsure or would like your password to be reset.</p>
+<p>In order to login to your site, append <code>/wp-admin</code> to the end of the URL. For example, if your site is located at <a href="https://sites.wsagames.com/ab15g23/" class="external">https://sites.wsagames.com/ab15g23/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>, going to <a href="https://sites.wsagames.com/ab15g23/wp-admin" class="external">https://sites.wsagames.com/ab15g23/wp-admin<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> will take you to the admin dashboard. You will need to use your username and password to log in.</p>
+<h2 id="admin-dashboard">Admin Dashboard<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#admin-dashboard" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><img src="../../0_GDA-Induction/2_WordPress/attachments/Pasted-image-20251001161408.png" width="auto" height="auto" alt/></p>
+<p>Once logged in, you will be greeted with admin dashboard. Most of the settings and backend tools for your site will be available through this page.</p>
+<h3 id="setting-up-your-profile">Setting up your profile<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#setting-up-your-profile" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>If you are accessing WordPress for the first time, it is recommended for you to take a moment to set up your profile before continuing.
+<span class="text-highlight">Hover over the &quot;Users&quot; tab on the left, and then click on &quot;Profile&quot;</span></p>
+<blockquote class="callout note" data-callout="note">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>Important </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>The password that you were given is a temporary one. It is strongly recommended for you to change your password.</p>
+</div>
+</blockquote>
+<p>Profile photos are handled by Gravatar - an external service not related to Wordpress or GDA. If you choose to set up a Gravatar account you will need to use your student email in order for it to be synced with your Wordpress account. It may take some time to update and should be used at your own discretion as Gravatar may display the photo on any other site that uses Gravatar. For this reason we advise against using your real-life likeness.</p>
+<p>When you are done, don’t forget to click the “Update Profile” button to save your changes!</p>
+<h3 id="changing-your-site-title-and-icon">Changing your site title and icon<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#changing-your-site-title-and-icon" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>By default the site title is set as your name, if you would like to change this <span class="text-highlight">hover over the &quot;Settings&quot; tab and select &quot;General</span>”:
+<img src="../../0_GDA-Induction/2_WordPress/attachments/Pasted-image-20251001172257.png" width="auto" height="auto" alt/>
+The icon should be a square and at least 512 x 512 pixels in size.</p>
+<p>Again, don’t forget to click the “Save Changes” button when done!</p>
+<h2 id="setting-up-your-categories">Setting up your categories<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#setting-up-your-categories" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Before you begin writing your posts, it is recommended for you to think about how you want your posts to be organized. Categories are a great way of doing this, and will allow for you to easily separate your content into specific menus and sections of your site.</p>
+<p>For GDA, we recommend creating categories for each aspect of your study. Categories can be nested, allowing for you to define a clear structure for your content. For example:</p>
+<ul>
+<li>Year 2
+<ul>
+<li>Semester 1
+<ul>
+<li>Game Design Document
+<ul>
+<li>Game Overview</li>
+<li>Player Experience</li>
+<li>Core Gameplay</li>
+<li><em>etc.</em></li>
+</ul>
+</li>
+<li>Research</li>
+<li>Weekly Updates</li>
+<li>Personal Development</li>
+</ul>
+</li>
+<li>Semester 2
+<ul>
+<li>…</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Year 3
+<ul>
+<li>Semester 1
+<ul>
+<li>…</li>
+</ul>
+</li>
+<li>Semester 2
+<ul>
+<li>…</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote class="callout note" data-callout="note">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>NOTE</p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>Third year students who decide to continue with their sites should have a CLEAR separation between their second and third year content.</p>
+</div>
+</blockquote>
+<p><span class="text-highlight">To setup new categories, hover over the &quot;Posts&quot; tab and select &quot;Categories&quot;:</span></p>
+<p><img src="../../0_GDA-Induction/2_WordPress/attachments/Pasted-image-20251001173751.png" width="auto" height="auto" alt/></p>
+<p>On the left you will see the form used for creating new categories. On the right you will see any existing categories already made. By default all WordPress sites come with an “Uncategorized” category that posts are placed under if no category is specified - this category can not be deleted.</p>
+<p><strong>Create any parent categories first, then any sub-categories after.</strong></p>
+<h3 id="slugs">Slugs<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#slugs" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Believe it or not, slug is a technical term for the human-readable part of a URL which identifies a certain page or a section of your site. For example, in <code>www.example.com/how-to-bake-bread</code>, <code>how-to-bake-bread</code> would be the slug that identifies that specific page. If your post is under a category, the category’s slug will be part of the URL that points to your post.</p>
+<h1 id="posts-and-pages">Posts and Pages<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#posts-and-pages" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="posts-vs-pages">Posts vs Pages<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#posts-vs-pages" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Wordpress content comes in two flavors, but what is the difference between the two?</p>
+<p><a href="https://elementor.com/blog/post-vs-page/?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=22685771421&amp;utm_term=&amp;lang=&amp;elem=Cj0KCQjwovPGBhDxARIsAFhgkwQrIP30iI9LjU1hBq43ZoiKefB-6Xec6MU5omKRsa9y5RlBGf9JKUkaAt-sEALw_wcB&amp;gad_source=1&amp;gad_campaignid=22685771421&amp;gclid=Cj0KCQjwovPGBhDxARIsAFhgkwQrIP30iI9LjU1hBq43ZoiKefB-6Xec6MU5omKRsa9y5RlBGf9JKUkaAt-sEALw_wcB" class="external">This Blog by Elementor<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> describes the differences in detail:</p>
+<h3 id="hierarchical-vs-static">Hierarchical vs. Static<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#hierarchical-vs-static" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Posts:</strong> Posts are hierarchical in nature. They are presented in reverse chronological order, with the newest content appearing first.</li>
+<li><strong>Pages:</strong> Pages can also be hierarchical, allowing for nested parent-child relationships. However, the primary focus is on creating a clear navigational structure for your website.</li>
+</ul>
+<h3 id="organization">Organization<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#organization" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Posts:</strong> Organized primarily using categories and tags, facilitating content discovery based on topics and keywords.</li>
+<li><strong>Pages:</strong> Organized within menus (top navigation, sidebar, footer menus) to guide visitors through essential website sections.</li>
+</ul>
+<h3 id="timeliness">Timeliness<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#timeliness" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Posts:</strong> Designed for timely content with a focus on recency due to their publication dates.</li>
+<li><strong>Pages:</strong> Built for content that doesn’t rely on a specific publication date and remains relevant over time.</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-content" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul class="toc-content overflow" id="list-1"><li class="depth-0"><a href="#what-is-wordpress" data-for="what-is-wordpress">What is WordPress?</a></li><li class="depth-0"><a href="#wordpress-at-gda" data-for="wordpress-at-gda">WordPress at GDA</a></li><li class="depth-1"><a href="#siteswsagamescom" data-for="siteswsagamescom">sites.wsagames.com</a></li><li class="depth-1"><a href="#third-year-projects" data-for="third-year-projects">Third Year Projects</a></li><li class="depth-0"><a href="#setting-up-your-wordpress-site" data-for="setting-up-your-wordpress-site">Setting up your WordPress site</a></li><li class="depth-1"><a href="#admin-dashboard" data-for="admin-dashboard">Admin Dashboard</a></li><li class="depth-2"><a href="#setting-up-your-profile" data-for="setting-up-your-profile">Setting up your profile</a></li><li class="depth-2"><a href="#changing-your-site-title-and-icon" data-for="changing-your-site-title-and-icon">Changing your site title and icon</a></li><li class="depth-1"><a href="#setting-up-your-categories" data-for="setting-up-your-categories">Setting up your categories</a></li><li class="depth-2"><a href="#slugs" data-for="slugs">Slugs</a></li><li class="depth-0"><a href="#posts-and-pages" data-for="posts-and-pages">Posts and Pages</a></li><li class="depth-1"><a href="#posts-vs-pages" data-for="posts-vs-pages">Posts vs Pages</a></li><li class="depth-2"><a href="#hierarchical-vs-static" data-for="hierarchical-vs-static">Hierarchical vs. Static</a></li><li class="depth-2"><a href="#organization" data-for="organization">Organization</a></li><li class="depth-2"><a href="#timeliness" data-for="timeliness">Timeliness</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Generated with<a href="https://quartz.jzhao.xyz/"> Quartz v4.5.0</a> © 2025<br/>'Tech Tree' component by <a href="https://www.linkedin.com/in/rosspopovs/">Ross Popovs</a> © 2025<i><br/>Except where otherwise noted, all guides and their contents are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC-BY-NC-SA</a>. Where possible, credit should be given to the original author followed by the University of Southampton.</i></p><ul></ul></footer></div></div></body><script type="application/javascript">function o(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.classList.contains("is-collapsed")?this.scrollHeight:t.scrollHeight;t.style.maxHeight=e+"px";let c=t,l=t.parentElement;for(;l;){if(!l.classList.contains("callout"))return;let i=l.classList.contains("is-collapsed")?l.scrollHeight:l.scrollHeight+c.scrollHeight;l.style.maxHeight=i+"px",c=l,l=l.parentElement}}function n(){let t=document.getElementsByClassName("callout is-collapsible");for(let s of t){let e=s.firstElementChild;if(!e)continue;e.addEventListener("click",o),window.addCleanup(()=>e.removeEventListener("click",o));let l=s.classList.contains("is-collapsed")?e.scrollHeight:s.scrollHeight;s.style.maxHeight=l+"px"}}document.addEventListener("nav",n);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script type="application/javascript">
+        const socket = new WebSocket('ws://localhost:3001')
+        // reload(true) ensures resources like images and scripts are fetched again in firefox
+        socket.addEventListener('message', () => document.location.reload(true))
+      </script><script src="../../postscript.js" type="module"></script></html>

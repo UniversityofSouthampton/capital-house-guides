@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3_Misc/index.md",
+                "file": "0_GDA Induction/2_WordPress/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -171,8 +171,9 @@
   },
   "active": "fdb4d1700dac781e",
   "lastOpenFiles": [
+    "0_GDA Induction/2_WordPress/0_WordPress Basics.md",
+    "0_GDA Induction/2_WordPress/index.md",
     "2_Blender/index.md",
-    "3_Misc/index.md",
     "0_GDA Induction/1_Studio/2_Steam PC.md",
     "index.md",
     "2_Blender/attachments/Untitled.png",
@@ -216,7 +217,6 @@
     "1_Unity/1_Coding/1_Advanced CSharp.md",
     "1_Unity/1_Coding/0_CSharp Resources.md",
     "1_Unity/0_Introduction/4_Input System Quick-Start.md",
-    "1_Unity/0_Introduction/3_Simple Orbit Camera.md",
     "Main Page.canvas"
   ]
 }
