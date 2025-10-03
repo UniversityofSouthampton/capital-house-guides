@@ -38,20 +38,16 @@ This is a practice called Version Control, widely used in industry and will be c
 
 ---
 
-2. Head to https://git.soton.ac.uk/gamesdesignart
-	- Login (top left corner of the page)
+2. Head to https://git.soton.ac.uk/gamesdesignart/portfolio-template
+	- Login (top right corner of the page)
 	- Login using your university username and password
-	- You will now be able to request to join the GDA group on GitLab
-
----
-3. Head to https://git.soton.ac.uk/gamesdesignart/portfolio-template
 
 --- 
-4. Click "Fork", you should now see this screen
-   ![[Pasted image 20251001205909.png]]
+3. Click "Fork", you should now see this screen
+   ![[Pasted image 20251003151202.png]]
 	- Set the project name to `(your username)-portfolio` (eg. rp1y23-portfolio)
-	- Set the namespace to `gamesdesignart/portfolio`
-	- Update the project slug to match the project name
+	- Set the namespace to your username
+	- Update the project slug to match the project name (eg. rp1y23-portfolio)
 	- Keep the branches option as "All branches"
 	- Set the visibility level to "Private"
 	- Then click "Fork Project"
@@ -60,7 +56,15 @@ This is a practice called Version Control, widely used in industry and will be c
 
 ---
 
-5. You should now see this screen - this is your own personal portfolio (currently a carbon copy of the template)
+4. You should now see this screen - this is your own personal portfolio (currently a carbon copy of the template)
+   ![[Pasted image 20251003150331.png]]
+	- On the left, hover over "Manage" and select "Members"
+	- Click on "Invite Members" and invite your technician as an Owner, they will then invite the relevant staff.
+	- Leave the expiration date blank
+	- **This is important as it will allow staff to access your portfolio**
+		![[Pasted image 20251003150452.png]]
+		
+5.  Head back to your portfolio page on GitLab
 	![[Pasted image 20251001210156.png]]
 	- You can not edit your portfolio directly on GitLab, instead what we need to do is "clone" your portfolio onto your computer. (In git, "cloning" can be thought as downloading the files)
 	- Open up the "Code" dropdown and copy the URL from the "Clone with HTTPS" field
@@ -144,6 +148,8 @@ This is a practice called Version Control, widely used in industry and will be c
 	- You may need to provide your university username and password.
 
 **Congratulations! You have successfully cloned the portfolio template, made changes to it, then committed and pushed your changes back!**
+
+IMPORANT: Once you have completed this guide, please send the GitLab to your portfolio (example `https://git.soton.ac.uk/rp1y23/rp1y23-protfolio`) to your technician to confirm you have completed this guide.
 
 If you are using a university PC, you will only need to repeat steps 6 onwards.
 
