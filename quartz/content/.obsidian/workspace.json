@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0_GDA Induction/2_Tools/0_Obsidian ePortfolio.md",
+                "file": "0_GDA Induction/2_Tools/1_Vector Graphics.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "0_Obsidian ePortfolio"
+              "title": "1_Vector Graphics"
             }
           }
         ]
@@ -171,19 +171,19 @@
   },
   "active": "fdb4d1700dac781e",
   "lastOpenFiles": [
-    "0_GDA Induction/2_Tools/attachments/Pasted image 20251003151202.png",
-    "0_GDA Induction/2_Tools/attachments/Pasted image 20251003150452.png",
-    "0_GDA Induction/2_Tools/attachments/Pasted image 20251003150331.png",
-    "0_GDA Induction/2_Tools/1_WordPress Basics.md",
+    "0_GDA Induction/2_Tools/attachments/Pasted image 20251015150306.png",
+    "0_GDA Induction/2_Tools/attachments/Pasted image 20251015145752.png",
+    "0_GDA Induction/2_Tools/attachments/Pasted image 20251015145714.png",
+    "0_GDA Induction/2_Tools/attachments/Pasted image 20251015145314.png",
+    "0_GDA Induction/2_Tools/1_Vector Graphics.md",
+    "0_GDA Induction/2_Tools/attachments/Pasted image 20251015160649.png",
+    "0_GDA Induction/2_Tools/attachments/Pasted image 20251015160624.png",
+    "0_GDA Induction/2_Tools/attachments/image-1-1024x595.png",
+    "0_GDA Induction/2_Tools/attachments/Pasted image 20251015155536.png",
+    "0_GDA Induction/2_Tools/attachments/Pasted image 20251015150439.png",
+    "0_GDA Induction/2_Tools/attachments/Pasted image 20251015150353.png",
+    "0_GDA Induction/2_Tools/2_WordPress Basics.md",
     "0_GDA Induction/2_Tools/0_Obsidian ePortfolio.md",
-    "0_GDA Induction/2_Tools/attachments/Pasted image 20251001215837.png",
-    "0_GDA Induction/2_Tools/attachments/Pasted image 20251001214931.png",
-    "0_GDA Induction/2_Tools/attachments/Pasted image 20251001214458.png",
-    "0_GDA Induction/2_Tools/attachments/Pasted image 20251001214221.png",
-    "0_GDA Induction/2_Tools/attachments/Pasted image 20251001213647.png",
-    "0_GDA Induction/2_Tools/attachments/Pasted image 20251001213522.png",
-    "0_GDA Induction/2_Tools/attachments/Pasted image 20251001213410.png",
-    "0_GDA Induction/2_Tools/attachments/Pasted image 20251001212450.png",
     "0_GDA Induction/2_Tools/index.md",
     "0_GDA Induction/index.md",
     "0_GDA Induction/2_Tools/attachments",
@@ -215,8 +215,6 @@
     "2_Blender",
     "1_Unity/2_2D/index.md",
     "1_Unity/2_2D/1_Simple 2D Player Controller.md",
-    "1_Unity/2_2D/0_Sprites and Spritesheet Resources.md",
-    "1_Unity/1_Coding/index.md",
     "Main Page.canvas"
   ]
 }
