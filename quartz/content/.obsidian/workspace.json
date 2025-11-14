@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0_GDA Induction/2_Tools/1_Vector Graphics.md",
+                "file": "0_GDA Induction/1_Studio/2_Games Library.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1_Vector Graphics"
+              "title": "2_Games Library"
             }
           }
         ]
@@ -171,11 +171,11 @@
   },
   "active": "fdb4d1700dac781e",
   "lastOpenFiles": [
+    "0_GDA Induction/2_Tools/1_Vector Graphics.md",
     "0_GDA Induction/2_Tools/attachments/Pasted image 20251015150306.png",
     "0_GDA Induction/2_Tools/attachments/Pasted image 20251015145752.png",
     "0_GDA Induction/2_Tools/attachments/Pasted image 20251015145714.png",
     "0_GDA Induction/2_Tools/attachments/Pasted image 20251015145314.png",
-    "0_GDA Induction/2_Tools/1_Vector Graphics.md",
     "0_GDA Induction/2_Tools/attachments/Pasted image 20251015160649.png",
     "0_GDA Induction/2_Tools/attachments/Pasted image 20251015160624.png",
     "0_GDA Induction/2_Tools/attachments/image-1-1024x595.png",
@@ -189,7 +189,7 @@
     "0_GDA Induction/2_Tools/attachments",
     "0_GDA Induction/2_Tools",
     "2_Blender/index.md",
-    "0_GDA Induction/1_Studio/2_Steam PC.md",
+    "0_GDA Induction/1_Studio/2_Games Library.md",
     "index.md",
     "2_Blender/attachments",
     "1_Unity/3_Shaders/index.md",
