@@ -1,6 +1,6 @@
 ---
-title: C# Advanced Practices + Tips and Tricks
-date: 2024-12-06
+title: C# Advanced Practices
+date: 2025-02-13
 categories:
   - unity
 author: Ross Popovs
@@ -9,8 +9,6 @@ author: Ross Popovs
 #### This guide is ever-growing!
 
 There are hundreds of practices, cheats, tips and tricks within Unity - way too many to document in one go! This guide will updated over time, and students are welcome to contribute to it!
-
-Last updated: 13.02.25
 
 **Feel like you are familiar with C# scripting and want to take your coding to the next level? This guide is for you! In no particular order, here are some more advanced C# (and general programming) practices you may not have known about!**
 

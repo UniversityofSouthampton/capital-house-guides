@@ -23,17 +23,17 @@
             {
               "type": "folder",
               "ctime": 1745332948496,
-              "path": "1_Unity/0_Introduction"
+              "path": "1_Unity/0_Unity Core"
             },
             {
               "type": "folder",
               "ctime": 1745332952760,
-              "path": "1_Unity/2_2D"
+              "path": "1_Unity/0_Unity Core/1_2D"
             },
             {
               "type": "folder",
               "ctime": 1745332960259,
-              "path": "1_Unity/1_Coding"
+              "path": "1_Unity/1_Scripting"
             },
             {
               "type": "folder",

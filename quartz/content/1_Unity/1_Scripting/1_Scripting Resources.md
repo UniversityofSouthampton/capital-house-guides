@@ -1,5 +1,5 @@
 ---
-title: C# and Scripting Resources
+title: Scripting Resources
 date: 2024-11-19
 categories:
   - unity

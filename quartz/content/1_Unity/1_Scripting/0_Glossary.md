@@ -9,25 +9,6 @@ tags:
 author: Parker English
 ---
 
-**Note: This is a student-submitted guide**. Please comment or get in touch with me (Parker) for suggestions or clarification!
-
-### Editor Terms
-
-![[unitylayout.jpg]]
-
-- **Scene** \- A space that holds all of the Game Objects needed for your game. A small game could only need one scene for the whole thing, while a bigger game might need one scene for every level or environment. When you edit in Unity you will be editing a Scene asset.
-
-- **Components** \- The "building blocks" of any Game Object that change properties or functionality.
-    - Components can be things like meshes, materials, Rigidbody components that give them mass and physics, colliders, etc.
-
-- **Game Objects** \- The fundamental objects within Unity.
-    - Game Objects represent props, characters, scenery. Can have a model or be empty.
-
-- **Scripts** \- Components comprised of a collection of C# code that let you add functionality to any object, or change its behavior.
-    - A script can be given to any object to give it that functionality. For example, a player character could have a Movement script, or an NPC could have an AI script.
-
-### C# & Scripting
-
 - **Class** - A block of code that contains **Variables** and **Functions**.
     - One class can inherit from another, which means it gets all its variables and functions by default. For example, all scripts you create inherit the 'MonoBehavior' class, which contains all the variables and functions needed to make a Unity game script.
 

@@ -38,7 +38,7 @@ Firstly, create your Unity project and ensure it is using the Universal 2D templ
 Before we make our character, we need a space for them to move on. Right click on the blank space in the **Hierarchy** window on the left and create a new 2D Sprite > Square. Set its **Position** in the **Inspector** panel on the right to X: 0, Y: -4.5, Z: 0. Then set its **Scale** to X: 20, Y: 1, Z: 1. This creates a floor.
 
 
-![[1_Unity/2_2D/images/image.png]]
+![[1_Unity/0_Unity Core/1_2D/images/image.png]]
 Quick tip: You can right-click the top bar on the Transform component & click Reset to reset all the values to default before this.
 
 
@@ -54,11 +54,11 @@ Now, select the Camera object in the Hierarchy panel, and set its Size in the In
 
 To create the player, right click the Hierarchy window again and add a new 2D Sprite > Square. Ensure their Position is at X: 0, Y: 0, Z: 0 so they are directly above the floor we made.
 
-![[1_Unity/2_2D/images/image-2.png]]
+![[1_Unity/0_Unity Core/1_2D/images/image-2.png]]
 
 Now add a Rigidbody 2D component the same way as before. Set the Body Type to Dynamic, as our player will be moving. Set the Collision Detection to Continuous, and set Interpolate to Interpolate. This should give our player some accurate and smooth collisions for hitting the floor no matter how fast they're going. Then under the Constraints dropdown, check Freeze Rotation on the Z axis. This stops your character from spinning around.
 
-![[1_Unity/2_2D/images/image-1.png]]
+![[1_Unity/0_Unity Core/1_2D/images/image-1.png]]
 
 Now that's done it's finally time to start coding!
 
@@ -74,7 +74,7 @@ For player input we will be using Unity's new Input System, as it allows for man
 
 After creating an Input Actions Asset, open it and create a new Action Map called Gameplay. Rename the existing Action created in the Map to "Move".
 
-![[1_Unity/2_2D/images/image-4.png]]
+![[1_Unity/0_Unity Core/1_2D/images/image-4.png]]
 Remember to click the "Save Asset" button!
 
 In the action properties panel on the right, set the Action Type to Value and the Control Type to Vector 2. This means our input (from a joystick or keyboard) is going to be read as a two-dimensional vector.
@@ -116,7 +116,7 @@ The **scope** of the variable is private as it's only ever used within this scri
 Now we need to enable the InputActions asset & the Gameplay action map by using an OnEnable() function under this.
 
 
-![[1_Unity/2_2D/images/image-32.png]]
+![[1_Unity/0_Unity Core/1_2D/images/image-32.png]]
 <figcaption>
 
 The OnEnable() function runs whenever this script is enabled (in this case immediately).
@@ -177,7 +177,7 @@ Now create a new FixedUpdate function. FixedUpdate repeats constantly like the U
 
 In the function, firstly get our rigidbody's current velocity to start with.
 
-![[1_Unity/2_2D/images/image-25.png]]
+![[1_Unity/0_Unity Core/1_2D/images/image-25.png]]
 
 Now we calculate the maximum speed change value, by multiplying acceleration by the change in time. After that, we move our current velocity towards the max speed using that value.
 

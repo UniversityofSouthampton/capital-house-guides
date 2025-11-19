@@ -70,7 +70,7 @@ To use the character controller component, we will need to create our own script
     
     - **Don’t change any other settings at this moment**
 
-![[1_Unity/0_Introduction/images/image-32.png]]
+![[1_Unity/0_Unity Core/images/image-32.png]]
 
 #### Create a script
 
@@ -80,7 +80,7 @@ To use the character controller component, we will need to create our own script
 
 - **Name your Script “BasicMovement” (no spaces):**
 
-![[1_Unity/0_Introduction/images/image-33.png]]
+![[1_Unity/0_Unity Core/images/image-33.png]]
 
 - Convention recommends pascal case for script names
     - E.g. PlayerController, CameraEffectsSystem, LevelOneProperties
@@ -297,7 +297,7 @@ public class BasicMovement : MonoBehaviour
 
 We can create a new property for our script by creating a public variable outside of a function (usually at the top of the script)
 
-![[1_Unity/0_Introduction/images/image-6.png]]
+![[1_Unity/0_Unity Core/images/image-6.png]]
 
 You are now able to change the speed within the editor and even in play mode. **Set this to a value other than 0** (what happens if you set it to a negative number?)
 
@@ -402,7 +402,7 @@ public class MouseLook : MonoBehaviour
 
 **Add the script to your capsule player object**. **You should see that the script has a property, but maybe not one you have seen before. Instead of a number, this property wants a GameObject:**
 
-![[1_Unity/0_Introduction/images/image-7.png]]
+![[1_Unity/0_Unity Core/images/image-7.png]]
 
 **The script will not work (in fact it will create an error) unless this property is set.**  This is left as an exercise for the reader.
 
