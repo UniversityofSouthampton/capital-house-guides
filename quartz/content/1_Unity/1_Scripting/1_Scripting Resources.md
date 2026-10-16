@@ -1,46 +1,28 @@
 ---
 title: Scripting Resources
-date: 2024-11-19
+date: 2025-11-26
 categories:
   - unity
 author: Ross Popovs
 tags:
   - resources
+  - scripting
+  - unity
 ---
 
 Learning to code can seem daunting, but the only way to get better is through exposure! There are thousands of tutorials online all with unique learning styles. The best way to learn coding is by doing it, and in this post, I will recommend some resources to get you started!
 
 ## Official Series by Unity: Beginner Scripting
 
-**This series assumes basic knowledge of Unity so it is recommended that you first complete the "Unity - Introduction" guide.** The guide includes pre-written code but does not expect you to write your own. Once you have completed it, you may want to learn more about the individual elements and structures which make up a script, in which case this series is perfect for you.
+Begin by setting up your script editor:
+https://learn.unity.com/tutorial/set-your-default-script-editor-ide
 
-https://learn.unity.com/project/beginner-gameplay-scripting?uv=2019.3
 
-#### Script Editor
 
-The guide uses an older version of Visual Studio as the script editor. You should use Rider as your editor (see Unity - Introduction guide for steps on how to set your default script editor.)
+Beginner Scripting
+This series assumes basic knowledge of Unity. The guide includes pre-written code but does not expect you to write your own. You may want to learn more about the individual elements and structures which make up a script, in which case this series is perfect for you.
 
-I strongly recommend watching these videos:
-
-- Scripts as Behaviour Components
-
-- Variables and Functions
-
-- Conventions and Syntax
-
-- IF Statements
-
-- Loops
-
-- Scope and Access Modifiers
-
-- Awake and Start
-
-- Update and FixedUpdate
-
-- Vector Maths
-
-Feel free to watch more of the series if you wish!
+[[2_Beginner Scripting]]
 
 ## CodeCademy
 

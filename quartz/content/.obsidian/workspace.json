@@ -13,27 +13,52 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1_Unity/0_Unity Core/1_2D/1_Simple 2D Player Controller.md",
+                "file": "3_Physical Games/0_Board Game Production.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1_Simple 2D Player Controller"
+              "title": "0_Board Game Production"
             }
           },
           {
-            "id": "08de44cef5d424b4",
+            "id": "3dfe54a8c26ce6aa",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "release-notes",
               "state": {
-                "file": "1_Unity/0_Unity Core/attachments/20251119-1818-59.2617249.gif"
+                "currentVersion": "1.11.7"
               },
-              "icon": "lucide-image",
-              "title": "20251119-1818-59.2617249"
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.11.7"
+            }
+          },
+          {
+            "id": "f9229c4be07f40a0",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.12.7"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.12.7"
+            }
+          },
+          {
+            "id": "b80cfffa097dd501",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.13.7"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.13.7"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -53,7 +78,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -106,7 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1_Unity/0_Unity Core/1_2D/1_Simple 2D Player Controller.md",
+                "file": "1_Unity/0_Unity Core/1_2D/index.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +143,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 1_Simple 2D Player Controller"
+              "title": "Backlinks for index"
             }
           },
           {
@@ -154,13 +181,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1_Unity/0_Unity Core/1_2D/1_Simple 2D Player Controller.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 1_Simple 2D Player Controller"
+              "title": "Outline"
             }
           }
         ],
@@ -181,53 +207,54 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f7e9705e8f9b36ed",
+  "active": "b80cfffa097dd501",
   "lastOpenFiles": [
+    "1_Unity/0_Unity Core/1_2D/images/Pasted image 20261014160655.png",
+    "1_Unity/0_Unity Core/1_2D/images/Pasted image 20261014160053.png",
+    "1_Unity/0_Unity Core/1_2D/images/Pasted image 20261014153942.png",
+    "1_Unity/0_Unity Core/1_2D/images/Pasted image 20261014135350.png",
+    "1_Unity/0_Unity Core/1_2D/images/Pasted image 20261014131600.png",
+    "1_Unity/0_Unity Core/1_2D/1_Flat Games in Unity.md",
+    "1_Unity/0_Unity Core/1_2D/1_Create your first Flat Game.md",
+    "1_Unity/0_Unity Core/1_2D/DRAFT_Simple 2D Player Controller 1.md",
+    "1_Unity/0_Unity Core/1_2D/Untitled.md",
+    "1_Unity/0_Unity Core/1_2D/Untitled",
+    "1_Unity/0_Unity Core/1_2D/DRAFT_Simple 2D Player Controller.md",
+    "1_Unity/0_Unity Core/1_2D/DRAFT_Sprites and Spritesheet Resources.md",
+    "[GDA_Board.md",
+    "3_Physical Games/0_Board Game Production.md",
+    "3_Physical Games/attachments/Pasted image 20260206122644.png",
+    "3_Physical Games/attachments/Pasted image 20260206122624.png",
+    "3_Physical Games/attachments/Pasted image 20260206122600.png",
+    "3_Physical Games/attachments/Pasted image 20260206122404.png",
+    "3_Physical Games/attachments/Pasted image 20260206122317.png",
+    "3_Physical Games/attachments/Pasted image 20260206122300.png",
+    "3_Physical Games/attachments",
+    "2_Blender/1_Character Creation/0_Character Turnarounds.md",
+    "3_Physical Games/0_Board Game Production/index.md",
+    "3_Physical Games/0_Board Game Production/Untitled.md",
+    "2_Blender/1_Character Creation/index.md",
+    "3_Physical Games/index.md",
+    "3_Physical Games/0_Board Game Production",
+    "2_Blender/index.md",
+    "1_Unity/1_Scripting/2_Beginner Scripting.md",
+    "3_Physical Games",
+    "1_Unity/1_Scripting/1_Scripting Resources.md",
+    "1_Unity/1_Scripting/3_Advanced Practices.md",
+    "1_Unity/0_Unity Core/1_2D/index.md",
     "1_Unity/0_Unity Core/1_2D/0_Sprites and Spritesheet Resources.md",
     "1_Unity/0_Unity Core/1_2D/1_Simple 2D Player Controller.md",
-    "1_Unity/0_Unity Core/2_3D/1_Simple Orbit Camera.md",
-    "1_Unity/0_Unity Core/0_Engine Basics.md",
-    "1_Unity/0_Unity Core/attachments/20251119-1850-51.5628925-ezgif.com-loop-count.gif",
-    "1_Unity/0_Unity Core/attachments/20251119-1838-50.1870684-ezgif.com-optimize.gif",
-    "1_Unity/0_Unity Core/attachments/20251119-1818-59.2617249-ezgif.com-optimize.gif",
-    "1_Unity/0_Unity Core/attachments/ezgif-23cc33b12b58b181.gif",
-    "1_Unity/0_Unity Core/attachments/20251119-1818-59.2617249.gif",
-    "1_Unity/0_Unity Core/attachments/20251119-1850-51.5628925.gif",
-    "1_Unity/0_Unity Core/attachments/Pasted image 20251119184339.png",
-    "1_Unity/0_Unity Core/attachments/20251119-1838-50.1870684.gif",
-    "1_Unity/0_Unity Core/attachments/Pasted image 20251119183243.png",
     "1_Unity/0_Unity Core/2_3D/0_First Person Controller.md",
-    "1_Unity/0_Unity Core/attachments/Pasted image 20251119170610.png",
-    "1_Unity/0_Unity Core/index.md",
+    "1_Unity/0_Unity Core/2_3D/1_Simple Orbit Camera.md",
     "2_Blender/0_Blender Core/5_Optimised Topology (draft).md",
-    "2_Blender/0_Blender Core/4_Optimised Topology.md",
-    "2_Blender/0_Blender Core/10_Exporting to Unity.md",
-    "1_Unity/index.md",
-    "1_Unity/1_Scripting/index.md",
-    "1_Unity/1_Scripting/2_Advanced Practices.md",
-    "1_Unity/1_Scripting/1_Scripting Resources.md",
-    "1_Unity/1_Scripting/0_Glossary.md",
-    "1_Unity/0_Unity Core/2_3D/index.md",
+    "1_Unity/0_Unity Core/0_Engine Basics.md",
+    "1_Unity/0_Unity Core/index.md",
     "1_Unity/0_Unity Core/attachments",
-    "2_Blender/0_Blender Core/index.md",
-    "1_Unity/0_Unity Core/1_2D/index.md",
     "1_Unity/0_Unity Core/2_3D",
-    "1_Unity/0_Introduction/4_Input System Quick-Start.md",
-    "0_GDA Induction/2_Tools/1_Vector Graphics.md",
-    "0_GDA Induction/2_Tools/2_WordPress Basics.md",
-    "0_GDA Induction/2_Tools/0_Obsidian ePortfolio.md",
-    "0_GDA Induction/2_Tools/index.md",
-    "0_GDA Induction/index.md",
     "0_GDA Induction/2_Tools/attachments",
     "0_GDA Induction/2_Tools",
-    "2_Blender/index.md",
-    "0_GDA Induction/1_Studio/2_Games Library.md",
     "2_Blender/attachments",
     "1_Unity/3_Shaders",
-    "2_Blender/1_Character Creation/attachments/setting-up-blender-char-creation.pdf",
-    "2_Blender/1_Character Creation/attachments",
-    "2_Blender/0_Blender Core/attachments",
-    "2_Blender/1_Character Creation",
     "Main Page.canvas"
   ]
 }

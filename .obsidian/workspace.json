@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "56101c8bf3e7f504",
+        "id": "0e913ec6cbd0d106",
         "type": "tabs",
         "children": [
           {
-            "id": "596a849d844f960f",
+            "id": "3230c2121b658aca",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "quartz/content/1_Unity/0_Unity Core/1_2D/1_Flat Games in Unity.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "1_Flat Games in Unity"
             }
           }
         ]
@@ -37,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -49,7 +55,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": ".cs",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 556.5
   },
   "right": {
     "id": "92f6b145a00994e0",
@@ -153,6 +159,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -161,27 +168,42 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9a295fffbf4d0553",
+  "active": "3230c2121b658aca",
   "lastOpenFiles": [
+    "quartz/public/1_Unity/0_Unity-Core/1_2D/1_Flat-Games-in-Unity-og-image.webp",
+    "quartz/public/tags/flatgame.html",
+    "quartz/public/1_Unity/0_Unity-Core/1_2D/1_Flat-Games-in-Unity.html",
+    "quartz/content/1_Unity/0_Unity Core/1_2D/images/Pasted image 20261014160655.png",
+    "quartz/content/1_Unity/0_Unity Core/1_2D/images/Pasted image 20261014160053.png",
+    "quartz/content/1_Unity/0_Unity Core/2_3D/0_First Person Controller.md",
+    "quartz/content/1_Unity/0_Unity Core/1_2D/1_Flat Games in Unity.md",
+    "quartz/content/1_Unity/0_Unity Core/1_2D/DRAFT_Simple 2D Player Controller.md",
+    "quartz/content/1_Unity/0_Unity Core/1_2D/images/Pasted image 20261014153942.png",
+    "Untitled.base",
+    "SpritesheetAnimation.cs",
+    "CameraFollow 1.cs",
+    "PlayerMovement 1.cs",
+    "PlayerMovement.cs",
+    "CameraFollow.cs",
+    "quartz/CODE_OF_CONDUCT.md",
+    "quartz/content/1_Unity/0_Unity Core/1_2D/images/Pasted image 20261014135350.png",
+    "quartz/content/1_Unity/0_Unity Core/1_2D/images/Pasted image 20261014131600.png",
+    "quartz/content/1_Unity/0_Unity Core/0_Engine Basics.md",
+    "quartz/content/1_Unity/0_Unity Core/index.md",
+    "quartz/content/1_Unity/index.md",
+    "quartz/content/1_Unity/0_Unity Core/1_2D/images/0a90c44e-cd63-4a9a-bef0-03125199d7e1_image8.png",
+    "quartz/content/1_Unity/0_Unity Core/1_2D/Untitled",
+    "quartz/content/1_Unity/0_Unity Core/1_2D/DRAFT_Sprites and Spritesheet Resources.md",
+    "quartz/content/1_Unity/0_Unity Core/2_3D/1_Simple Orbit Camera.md",
     "quartz/content/sortspec.md",
     "quartz/content/Untitled.md",
     "quartz/content/Unity/2D/Simple 2D Player Controller/images/image.png",
     "quartz/content/Unity/2D/Simple 2D Player Controller/images/image-9.png",
     "quartz/content/Unity/2D/Simple 2D Player Controller/images/image-81.png",
     "quartz/content/Unity/2D/Simple 2D Player Controller/images/image-80.png",
-    "quartz/content/Unity/2D/Simple 2D Player Controller/images/image-8.png",
-    "quartz/content/Unity/2D/Simple 2D Player Controller/images/image-79.png",
-    "quartz/content/Unity/2D/Simple 2D Player Controller/images/image-78.png",
-    "quartz/content/Unity/2D/Simple 2D Player Controller/images/image-77.png",
-    "quartz/content/Unity/2D/Simple 2D Player Controller/images/image-76.png",
-    "quartz/content/Unity/2D/Simple 2D Player Controller/images/image-75.png",
     "quartz/content/Unity/2D/Simple 2D Player Controller/index.md",
     "quartz/content/Unity/2D/Simple 2D Player Controller/images",
     "quartz/content/Unity/2D/Sprites and Spritesheet Resources/index.md",
-    "quartz/content/Unity/2D/Sprites and Spritesheet Resources/images",
-    "quartz/content/Unity/2D/Simple 2D Player Controller",
-    "quartz/content/Unity/2D/Sprites and Spritesheet Resources",
-    "quartz/content/Unity/2D/index.md",
-    "quartz/content/Unity/2D"
+    "quartz/content/Unity/2D/index.md"
   ]
 }

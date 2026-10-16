@@ -9,13 +9,14 @@ tags:
   - scripting
   - unity
 author: Parker English
+draft: "true"
 ---
 
 **Note: This is a student-submitted guide**. Please comment or get in touch with me (Parker) for suggestions or clarification!
 
 # Intro
 
-In the Introduction tutorial you will have been introduced to Unity by making a simple player controller. This one will also be a very simple controller with minimal code, but will be a lot more customizable for any kind of 2D game you need. The code for movement, jumping etc. will all be seperate, so you can make a top-down game without jumping (_Stardew Valley, Cult of the Lamb)_ or a side-scrolling platformer (_Super Mario Bros, Hollow Knight, Celeste)_.
+In the Introduction tutorial you will have been introduced to Unity by making a simple player controller. This one will also be a very simple controller with minimal code, but will be a lot more customizable for any kind of 2D game you need. The code for movement, jumping etc. will all be separate, so you can make a top-down game without jumping (_Stardew Valley, Cult of the Lamb)_ or a side-scrolling platformer (_Super Mario Bros, Hollow Knight, Celeste)_.
 
 You will be able to tweak any value you want for your movement to make it as satifsying as possible, including:
 

@@ -1,6 +1,6 @@
 ---
 title: Engine Basics
-date: 2025-11-19
+date: 2026-10-14
 categories:
   - unity
 tags:
@@ -27,10 +27,6 @@ author: Ross Popovs
 
 - Free for students and personal use!
 
-# Installing and Launching Unity
-
-🖥️ The lab PCs are pre-installed with Unity 6000.0.56f1
-- It is highly recommended that if you are installing Unity on your personal laptop, that you install the matching version as this will give you the option to work on your projects in the computer lab if you wish
 
 # Creating your first project
 
@@ -40,9 +36,7 @@ author: Ross Popovs
 2. Choose the **Universal 2D** template
 ![[Pasted image 20251119162205.png]]
 
-- Set your project name - Avoid using spaces, instead separate words with a dash (my-project) or use capitalization (MyProject), this is good practice and will be important later.
-
-- 🖥️**Computer Suite: Save the project location to the D drive**
+- Set your project name - **Avoid using spaces, instead separate words with a dash (my-project) or use capitalization (MyProject), this is good practice and will be important later.**
 
 - Leave "Connect to Unity Cloud" checked
 
@@ -52,12 +46,12 @@ author: Ross Popovs
 
 The different templates are all built up on one of the three ['Renderer Pipelines'](https://youtu.be/ONtM0IF7TPk) provided by Unity:
 
-| ![[1_Unity/0_Unity Core/images/image-2.png]] | **Built-In Pipeline**  <br>- Legacy  <br>\- This renderer type is being phased out<br>- Not recommended for new users as it lack certain new features                                                              |
+| ![[1_Unity/0_Unity Core/images/image-2.png]] | **Built-In Pipeline**  <br>- Legacy  <br>\- This renderer type is being phased out<br>- Not recommended for new users as it lacks new features                                                                     |
 | -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | ![[1_Unity/0_Unity Core/images/image-4.png]] | **Universal Render Pipeline (URP)**  <br>\- Modern go-to option  <br>\- Artist-friendly features  <br>\- Best for cross-platform  <br>**\- Best for most cases**<br>**- The recommended option for most projects** |
 | ![[1_Unity/0_Unity Core/images/image-5.png]] | **High Definition Render Pipeline (HDRP)**  <br>\- Advanced graphical features intended for high-end hardware  <br>- Provides more graphical options to the developer<br>\- Ask if you need this for your project  |
 
-More specific templates (eg. Mobile or VR templates) build up from these pipelines by bundling certain pre-installed packages and settings. **If in doubt select the Universal 2D or Universal 3D template**
+More specific templates (eg. Mobile or VR templates) build up from these pipelines by bundling certain pre-installed packages and settings. In most cases you would want to use the **Universal 2D or Universal 3D templates**
 # Navigating the Engine
 
 When you first open a new project in Unity, you will be greeted by a set of panels in the following default layout. Before doing anything, lets take a moment to go through the layout:
@@ -87,32 +81,32 @@ New projects come with a default scene titled "SampleScene." You can find it wit
 
 It is a good idea to rename this scene. You can name it anything as long as it roughly describes the intended contents of the scene. For example "Main Menu", "Item Store", or "The Wilds"
 
-There is no restriction on the minimum or maximum number of scenes. A small game could only need one scene for the whole thing, while a bigger game might need one scene for every level or environment.
+There is no restriction on the minimum or maximum number of scenes. A small game could only need one scene, while a bigger game might need more. This is a question of design:
 
-- For example, in a more complex project you can use scenes to organize your game:  
+- For example, in a more complex project the organization of scenes might look like this:  
     \- \[Main Menu Scene\]  
     \- \[Level 1 Scene\]  
     \- \[Level 2 Scene\]  
-    \- The scenes don't have to be sequential, for instance you could have \[Hub World\], \[Building 1\], \[Building 2\], \[Settings Menu\] as separate scenes that you can load at any time.
 
 - Scenes are essential for organization, performance, and robustness!
-- In-game, you can switch between scenes through scripting.
+- You can switch between scenes at any point in the editor
+- In a built game, scenes can be loaded through scripting
 - Important Note: If you press Ctrl+S, you are only saving the currently open scene. You can save all scenes through File -> Save Project
 
 ### GameObjects and Components
 
 - **GameObjects**: Fundamental objects within Unity  
-    A scene can have an unlimited number of GameObjects, representing anything and everything in your scene from your player; to props or weapons; to a terrain or a building. Anything in your scene will be a GameObject.  
+    A scene can have an unlimited number of GameObjects, representing anything in your scene. This can be players, props, weapons, terrain, buildings, etc. A gameobject would be anything within your scene.
     A GameObject can have a mesh attached to it or be invisible.
     - GameObjects don't have any inherent functionality by themselves, but can be extended through the use of Components and Scripts.
     - A GameObject doesn't have to be something physical within your scene. For example we can use invisible GameObjects to hold scripts that run in the background.
 
+- Components add functionality to GameObjects.
 - Unity has hundreds of built-in Components, but in many cases we will need to write our own Components in the form of C# Scripts.
-
 ### Creating your first GameObject
 
-Lets create a new GameObject which will represent our player.
-Create a new capsule object by **right-clicking within the Hierarchy window** and select 
+Lets create a new GameObject to represent our player.
+Create a new Square Sprite object by **right-clicking within the Hierarchy window** and select 
 2D Object -> Sprites -> Square
 
 ![[Pasted image 20251119170413.png]]
@@ -137,13 +131,13 @@ Certain objects may have additional tools on offer - hover over the icon to lear
 > If you ever lose track of an object, select it in the hierarchy and press F to focus on it.
 
 ### Inspector Window
-Whenever you have an object selected in the scene, the inspector will populate with details pertaining to that object.
+The inspector window will populate with a details for the current selected object
 
 Select your square and have a look at the Inspector:
 
 ![[Pasted image 20251119170610.png]]
 
-- The top of the inspector  allows you to activate/deactivate your object, rename it, as well as Tag and Layer options which we will skip for now.
+- The top of the inspector allows you to activate/deactivate your object and rename it.
 
 - This is followed by the object's components. On our square, by default these are:
     - **Transform**: All GameObjects have a Transform component. This holds the position, rotation, and scale of the object.
@@ -152,7 +146,7 @@ Select your square and have a look at the Inspector:
     
     - **Material:** The material for the object. The default material can not be edited but a new material can be created and dragged here to replace it.
 
-- Finally at the bottom you will find the "Add Component" button. Use it to browse the catalogue of Unity's built-in components. If you write or import any scripts these will also be available here. Note that not all components are compatible with each other and some components can only be added once per object.
+- Finally at the bottom you will find the "Add Component" button. Use it to browse the catalogue of Unity's built-in components. If you write or import any scripts these will also be available here. Note that not all components are compatible with each other and some components can only be added once per object. Unity will let you know if this is the case.
 
 > [!NOTE] Tip
 > If you are ever unsure of what a component does, click on the small question mark icon in the top right of the component - this will open up the Unity documentation page for that component.
@@ -284,6 +278,6 @@ Don't forget to also add a Box Collider 2D to your floor object!
 Congratulations, you have taken your first steps in familiarizing yourself with Unity!
 Your next steps will depend on what you want your first game to look like! Feel free to continue working within this project, or create a new one!
 
-A reminder that the best way to learn any new creative software is to just try making something - don't be scared of the program, experiment, and most importantly have fun with it! Feel free to explore the catalog of guides here or explore the thousands of beginner-friendly guides created in Unity. If you are not sure what to search, use the template "How to make \<xyz mechanic\> in Unity"
+A reminder that the best way to learn any new creative software is to experiment - don't be scared of the program and have fun with it! Feel free to explore the catalog of guides here or explore the thousands of beginner-friendly guides created in Unity. If you are not sure what to search, use the template "How to make \<xyz mechanic\> in Unity"
 
 
