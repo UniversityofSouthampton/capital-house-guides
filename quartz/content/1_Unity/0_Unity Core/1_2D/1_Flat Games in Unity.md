@@ -30,7 +30,7 @@ This guide provides you with pre-made scripts and instructions for creating your
 
 4. In the assets panel, right click and create a new folder named "Scripts"
 
-5. [Download the template scripts]([Flat game scripts](https://sotonac-my.sharepoint.com/:f:/g/personal/rp1y23_soton_ac_uk/IgCUP4X1jm8ESqUh91T23N9ZAZyX5bXplgCwbZT43di7v_c?e=oboxLA)) and drag them into the Scripts folder
+5. [Download the template scripts](https://sotonac-my.sharepoint.com/:f:/g/personal/rp1y23_soton_ac_uk/IgCUP4X1jm8ESqUh91T23N9ZAZyX5bXplgCwbZT43di7v_c?e=oboxLA) and drag them into the Scripts folder
    ![[Pasted image 20261014153942.png]]
 
 6. Create a Square Sprite by right-clicking in the Hierarchy (2d Objects -> Sprites -> Square)
@@ -173,10 +173,11 @@ This script will allow for any object to have two spritesheet animations - one f
 You can use individual images that you import, or if you have a spreadsheet, [you can follow this guide on how to separate a spritesheet into individual images](https://docs.unity3d.com/6000.6/Documentation/Manual/sprite/sprite-editor/use-editor.html).
 
 ![[Pasted image 20261014160655.png]]
-**Time Between Frames**: How quickly the script changes between one frame and the next
-**Idle Frames**: A list of images to use for the idle animation when the player is not moving. You can add or remove elements from this list with the + and - buttons.
-**Movement Frames**: Same as above but for when the player is moving.
-**Flip Player in Direction**: If enabled, will automatically flip the sprite depending on the direction that the player is moving in.
+
+- **Time Between Frames**: How quickly the script changes between one frame and the next
+- **Idle Frames**: A list of images to use for the idle animation when the player is not moving. You can add or remove elements from this list with the + and - buttons.
+- **Movement Frames**: Same as above but for when the player is moving.
+- **Flip Player in Direction**: If enabled, will automatically flip the sprite depending on the direction that the player is moving in.
 
 > [!NOTE] Note
 > This script is more advanced, but I still encourage you to inspect it - what part of the script is responsible for changing the sprites? What part of the script is responsible for flipping the character?

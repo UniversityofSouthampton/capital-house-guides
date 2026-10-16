@@ -6,35 +6,53 @@
       <description>Last 10 notes on Guides Repo</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Engine Basics</title>
+    <link>https://guides.techhub.wsagames.com/1_Unity/0_Unity-Core/0_Engine-Basics</link>
+    <guid>https://guides.techhub.wsagames.com/1_Unity/0_Unity-Core/0_Engine-Basics</guid>
+    <description>Why Unity? Large and active community of professionals and hobbyists Used widely in many creative industry Cross-platform development Rich 2D and 3D capabilities Real-time experiences for AR, VR, mobile, desktop and web (Not limited to just games!) Continuous updates with LTS (Long Term Support) ver...</description>
+    <pubDate>Fri, 16 Oct 2026 10:39:26 GMT</pubDate>
+  </item><item>
     <title>Flat Games in Unity</title>
     <link>https://guides.techhub.wsagames.com/1_Unity/0_Unity-Core/1_2D/1_Flat-Games-in-Unity</link>
     <guid>https://guides.techhub.wsagames.com/1_Unity/0_Unity-Core/1_2D/1_Flat-Games-in-Unity</guid>
     <description>A recipe for flat games This guide provides you with pre-made scripts and instructions for creating your own flat game in Unity 2D.</description>
-    <pubDate>Fri, 16 Oct 2026 10:32:25 GMT</pubDate>
+    <pubDate>Fri, 16 Oct 2026 10:39:26 GMT</pubDate>
   </item><item>
-    <title>Board Game Production</title>
-    <link>https://guides.techhub.wsagames.com/3_Physical-Games/0_Board-Game-Production</link>
-    <guid>https://guides.techhub.wsagames.com/3_Physical-Games/0_Board-Game-Production</guid>
-    <description>REQUIREMENTS In addition to your Obsidian folders: Playable tabletop game. A printed game board. Printed rulebook.</description>
-    <pubDate>Fri, 06 Feb 2026 12:35:32 GMT</pubDate>
-  </item><item>
-    <title>Board Games</title>
-    <link>https://guides.techhub.wsagames.com/3_Physical-Games/</link>
-    <guid>https://guides.techhub.wsagames.com/3_Physical-Games/</guid>
+    <title>2D</title>
+    <link>https://guides.techhub.wsagames.com/1_Unity/0_Unity-Core/1_2D/</link>
+    <guid>https://guides.techhub.wsagames.com/1_Unity/0_Unity-Core/1_2D/</guid>
     <description></description>
-    <pubDate>Fri, 06 Feb 2026 12:06:55 GMT</pubDate>
+    <pubDate>Fri, 16 Oct 2026 10:39:26 GMT</pubDate>
+  </item><item>
+    <title>Scripting Resources</title>
+    <link>https://guides.techhub.wsagames.com/1_Unity/1_Scripting/1_Scripting-Resources</link>
+    <guid>https://guides.techhub.wsagames.com/1_Unity/1_Scripting/1_Scripting-Resources</guid>
+    <description>Learning to code can seem daunting, but the only way to get better is through exposure! There are thousands of tutorials online all with unique learning styles.</description>
+    <pubDate>Fri, 16 Oct 2026 10:39:26 GMT</pubDate>
   </item><item>
     <title>Beginner Scripting</title>
     <link>https://guides.techhub.wsagames.com/1_Unity/1_Scripting/2_Beginner-Scripting</link>
     <guid>https://guides.techhub.wsagames.com/1_Unity/1_Scripting/2_Beginner-Scripting</guid>
     <description>Preface Video Loading Allow a few seconds for youtube video previews to load on this page This guide is a modification of Unity’s official Beginner Scripting tutorial series.</description>
-    <pubDate>Thu, 27 Nov 2025 13:01:17 GMT</pubDate>
+    <pubDate>Fri, 16 Oct 2026 10:39:26 GMT</pubDate>
   </item><item>
-    <title>Engine Basics</title>
-    <link>https://guides.techhub.wsagames.com/1_Unity/0_Unity-Core/0_Engine-Basics</link>
-    <guid>https://guides.techhub.wsagames.com/1_Unity/0_Unity-Core/0_Engine-Basics</guid>
-    <description>Why Unity? Large and active community of professionals and hobbyists Used widely in many creative industry Cross-platform development Rich 2D and 3D capabilities Real-time experiences for AR, VR, mobile, desktop and web (Not limited to just games!) Continuous updates with LTS (Long Term Support) ver...</description>
-    <pubDate>Wed, 19 Nov 2025 19:41:39 GMT</pubDate>
+    <title>C# Advanced Practices</title>
+    <link>https://guides.techhub.wsagames.com/1_Unity/1_Scripting/3_Advanced-Practices</link>
+    <guid>https://guides.techhub.wsagames.com/1_Unity/1_Scripting/3_Advanced-Practices</guid>
+    <description>This guide is ever-growing! There are hundreds of practices, cheats, tips and tricks within Unity - way too many to document in one go! This guide will updated over time, and students are welcome to contribute to it! Feel like you are familiar with C# scripting and want to take your coding to the ne...</description>
+    <pubDate>Fri, 16 Oct 2026 10:39:26 GMT</pubDate>
+  </item><item>
+    <title>Board Game Production</title>
+    <link>https://guides.techhub.wsagames.com/3_Physical-Games/0_Board-Game-Production</link>
+    <guid>https://guides.techhub.wsagames.com/3_Physical-Games/0_Board-Game-Production</guid>
+    <description>REQUIREMENTS In addition to your Obsidian folders: Playable tabletop game. A printed game board. Printed rulebook.</description>
+    <pubDate>Fri, 16 Oct 2026 10:39:26 GMT</pubDate>
+  </item><item>
+    <title>Board Games</title>
+    <link>https://guides.techhub.wsagames.com/3_Physical-Games/</link>
+    <guid>https://guides.techhub.wsagames.com/3_Physical-Games/</guid>
+    <description></description>
+    <pubDate>Fri, 16 Oct 2026 10:39:26 GMT</pubDate>
   </item><item>
     <title>First Person Controller</title>
     <link>https://guides.techhub.wsagames.com/1_Unity/0_Unity-Core/2_3D/0_First-Person-Controller</link>
@@ -46,24 +64,6 @@
     <link>https://guides.techhub.wsagames.com/1_Unity/0_Unity-Core/2_3D/1_Simple-Orbit-Camera</link>
     <guid>https://guides.techhub.wsagames.com/1_Unity/0_Unity-Core/2_3D/1_Simple-Orbit-Camera</guid>
     <description>Note: This is a student-submitted guide.</description>
-    <pubDate>Wed, 19 Nov 2025 19:41:39 GMT</pubDate>
-  </item><item>
-    <title>3D</title>
-    <link>https://guides.techhub.wsagames.com/1_Unity/0_Unity-Core/2_3D/</link>
-    <guid>https://guides.techhub.wsagames.com/1_Unity/0_Unity-Core/2_3D/</guid>
-    <description></description>
-    <pubDate>Wed, 19 Nov 2025 19:41:39 GMT</pubDate>
-  </item><item>
-    <title>Unity Core</title>
-    <link>https://guides.techhub.wsagames.com/1_Unity/0_Unity-Core/</link>
-    <guid>https://guides.techhub.wsagames.com/1_Unity/0_Unity-Core/</guid>
-    <description></description>
-    <pubDate>Wed, 19 Nov 2025 19:41:39 GMT</pubDate>
-  </item><item>
-    <title>Glossary</title>
-    <link>https://guides.techhub.wsagames.com/1_Unity/1_Scripting/0_Glossary</link>
-    <guid>https://guides.techhub.wsagames.com/1_Unity/1_Scripting/0_Glossary</guid>
-    <description> Class - A block of code that contains Variables and Functions.</description>
     <pubDate>Wed, 19 Nov 2025 19:41:39 GMT</pubDate>
   </item>
     </channel>
